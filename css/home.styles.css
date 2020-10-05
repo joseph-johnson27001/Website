@@ -30,6 +30,9 @@ nav a {
     box-shadow: none;
 }
 
+.container {
+  position: relative;
+}
 /* ------------------------------- */
 /* MAIN */
 /* ------------------------------- */
