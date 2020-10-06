@@ -70,11 +70,11 @@ nav a {
 }
 
 .slide-left {
-  animation:slideInFromLeft .4s linear;
+  animation:slideInFromLeft .8s linear;
 }
 
 .slide-right {
-  animation:slideInFromRight .4s linear;
+  animation:slideInFromRight .8s linear;
 }
 
 .slide-up-one {
@@ -86,7 +86,14 @@ nav a {
 	animation-name: fadeInOpacity;
 	animation-iteration-count: 1;
 	animation-timing-function: linear;
-	animation-duration: .8s;
+	animation-duration: 1.5s;
+}
+
+/* Bounce animation for icons */
+.bounce {
+    animation-name: bounce-7;
+    animation-timing-function: cubic-bezier(0.280, 0.840, 0.420, 1);
+    animation-duration: 2s;
 }
 
 /* Anchor tags for navigation bar offset */
@@ -184,6 +191,19 @@ nav a {
       opacity: 1;
       transform: translateY(0);
    }
+}
+
+/* BOUNCE ANIMATION FOR ICONS */
+
+
+@keyframes bounce-7 {
+    0%   { transform: scale(1,1)      translateY(0); }
+    10%  { transform: scale(1.1,.9)   translateY(0); }
+    30%  { transform: scale(.9,1.1)   translateY(-50px); }
+    50%  { transform: scale(1.05,.95) translateY(0); }
+    57%  { transform: scale(1,1)      translateY(-7px); }
+    64%  { transform: scale(1,1)      translateY(0); }
+    100% { transform: scale(1,1)      translateY(0); }
 }
 
 /* ------------------------------- */
