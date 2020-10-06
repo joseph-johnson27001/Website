@@ -101,8 +101,8 @@ svg {
 .name {
   stroke: white;
   stroke-width: 1;
-  stroke-dasharray: 300;
-  stroke-dashoffset: 300;
+  stroke-dasharray: 350;
+  stroke-dashoffset: 350;
   animation: offset 5s linear forwards, fill-it 2s 1s forwards;
 }
 .icon {
