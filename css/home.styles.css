@@ -9,6 +9,7 @@ body {
   font-family: 'Open Sans', sans-serif;
 }
 
+
 /* ------------------------------- */
 /* NAVIGATION */
 /* ------------------------------- */
@@ -25,7 +26,7 @@ nav {
 nav a {
   color: white;
   font-size: 1.1rem;
-  font-weight: 400;
+  font-weight: 100;
 }
 
 .navbar-toggler:active {
@@ -44,10 +45,19 @@ nav a {
 
 /* HEADINGS */
 
-h2 {
+.container h2 {
   text-align: center;
   color: #313133;
+  font-weight: 400;
 }
+
+.container h3,
+.container h4,
+.container h5,
+.container h6 {
+  font-weight: 100;
+}
+
 
 /* Body */
 
@@ -55,13 +65,28 @@ h2 {
   padding: 1rem;
 }
 
-
-.slide {
-  animation:slideInFromLeft .6s linear;
+.slide-header {
+    animation:slideInFromLeft .3s linear;
 }
 
-.background-two {
-  background-color: #FAFAFA;
+.slide-left {
+  animation:slideInFromLeft .4s linear;
+}
+
+.slide-right {
+  animation:slideInFromRight .4s linear;
+}
+
+.slide-up-one {
+  animation:slideInFromBottom .6s ease-in;
+}
+
+.fade-in {
+	opacity: 1;
+	animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: linear;
+	animation-duration: .8s;
 }
 
 /* Anchor tags for navigation bar offset */
@@ -74,8 +99,35 @@ h2 {
 }
 
 /* ------------------------------- */
+/* JUMBOTRON SECTION */
+/* ------------------------------- */
+
+.jumbotron{
+  background-color: white;
+}
+
+/* ------------------------------- */
+/* ABOUT SECTION */
+/* ------------------------------- */
+
+/* Profile Image */
+
+#profile_image {
+  border-radius: 50%;
+}
+
+/* ------------------------------- */
 /* PORTFOLIO */
 /* ------------------------------- */
+
+
+/* ------------------------------- */
+/* CONTACT AREA */
+/* ------------------------------- */
+
+.grey{
+  background-color: grey;
+}
 
 
 
@@ -83,20 +135,34 @@ h2 {
 /* KEY FRAMES & ANIMATIONS */
 /* ------------------------------- */
 
-.fade-in {
-	opacity: 1;
-	animation-name: fadeInOpacity;
-	animation-iteration-count: 1;
-	animation-timing-function: linear;
-	animation-duration: 1.2s;
-}
+
 
 @keyframes slideInFromLeft {
   0% {
-    transform: translateX(-40%);
+    transform: translateX(-100%);
   }
   100% {
     transform: translateX(0);
+  }
+}
+
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInFromBottom {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
   }
 }
 
