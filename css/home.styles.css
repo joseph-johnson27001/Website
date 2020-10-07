@@ -16,6 +16,7 @@ body {
 
 #nav-top {
     animation: fadeInDown .5s linear;
+    border-bottom: 1px solid gold;
 }
 
 .navbar {
@@ -87,7 +88,7 @@ nav a {
 	animation-name: fadeInOpacity;
 	animation-iteration-count: 1;
 	animation-timing-function: linear;
-	animation-duration: 1.5s;
+	animation-duration: .5s;
 }
 
 /* Bounce animation for icons */
@@ -111,14 +112,13 @@ nav a {
 /* JUMBOTRON SECTION */
 /* ------------------------------- */
 
-.jumbotron{
-  background-color: white;
+.jumbotron {
+  background-image: url("../images/balloons.webp");
+  background-size: cover;
+  background-position: 50%;
 }
 
-.jumbo-container {
-  max-width: 1000px;
 
-}
 
 /* ------------------------------- */
 /* ABOUT SECTION */
