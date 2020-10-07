@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/home.styles.css">
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;1,300;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <title>Home</title>
@@ -15,7 +16,7 @@
 
 <!-- NAVBAR -->
 
-<nav class="navbar navbar-expand-md navbar-dark py-3 sticky-top">
+<nav class="navbar navbar-expand-md navbar-dark py-3 sticky-top" id="nav-top">
   <div class="container">
   <a class="navbar-brand" href="index.html">joseph.johnson</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -25,7 +26,7 @@
   <div class="collapse navbar-collapse" id="navbarNav">
     <ul class="navbar-nav ml-auto pr-3">
       <li class="nav-item">
-        <a class="nav-link" href="#about">ABOUT <span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="#home">HOME <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="#portfolio">PORTFOLIO</a>
@@ -41,9 +42,9 @@
 
 <!-- MAIN BODY -->
 
-<a class="anchor" id="about"></a>
+<a class="anchor" id="home"></a>
 
-<div class="jumbotron jumbotron-fluid fade-in">
+<div class="jumbotron jumbotron-fluid text-black fade-in">
   <div class="container">
     <h1 class="display-4 ">Web Design Words</h1>
     <p class="lead">Something about how I design all of my websites. Afterwards, maybe some more stuff about websites.</p>
@@ -86,26 +87,32 @@
   </div>
 </div> -->
 
+<!-- <div class="container">
+  <svg width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-brush svg bounce" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+    <path fill-rule="evenodd" d="M15.825.12a.5.5 0 0 1 .132.584c-1.53 3.43-4.743 8.17-7.095 10.64a6.067 6.067 0 0 1-2.373 1.534c-.018.227-.06.538-.16.868-.201.659-.667 1.479-1.708 1.74a8.117 8.117 0 0 1-3.078.132 3.658 3.658 0 0 1-.563-.135 1.382 1.382 0 0 1-.465-.247.714.714 0 0 1-.204-.288.622.622 0 0 1 .004-.443c.095-.245.316-.38.461-.452.393-.197.625-.453.867-.826.094-.144.184-.297.287-.472l.117-.198c.151-.255.326-.54.546-.848.528-.739 1.2-.925 1.746-.896.126.007.243.025.348.048.062-.172.142-.38.238-.608.261-.619.658-1.419 1.187-2.069 2.175-2.67 6.18-6.206 9.117-8.104a.5.5 0 0 1 .596.04zM4.705 11.912a1.23 1.23 0 0 0-.419-.1c-.247-.013-.574.05-.88.479a11.01 11.01 0 0 0-.5.777l-.104.177c-.107.181-.213.362-.32.528-.206.317-.438.61-.76.861a7.127 7.127 0 0 0 2.657-.12c.559-.139.843-.569.993-1.06a3.121 3.121 0 0 0 .126-.75l-.793-.792zm1.44.026c.12-.04.277-.1.458-.183a5.068 5.068 0 0 0 1.535-1.1c1.9-1.996 4.412-5.57 6.052-8.631-2.591 1.927-5.566 4.66-7.302 6.792-.442.543-.796 1.243-1.042 1.826a11.507 11.507 0 0 0-.276.721l.575.575zm-4.973 3.04l.007-.005a.031.031 0 0 1-.007.004zm3.582-3.043l.002.001h-.002z"/>
+  </svg>
+<a class="anchor" id="portfolio"></a>
+<h2  class="slide-left">WEB DESIGN</h2>
+</div> -->
 
-    <!-- PORTFOLIO SECTION-->
-
-
-  <div class="container ">
-    <svg width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-easel svg bounce" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+<!-- RECENT PROJECTS SECTION-->
+  <div class="container">
+    <svg width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-easel svg bounce" fill="currentColor"  xmlns="http://www.w3.org/2000/svg">
     <path d="M8.473.337a.5.5 0 0 0-.946 0L6.954 2h2.092L8.473.337zM12.15 11h-1.058l1.435 4.163a.5.5 0 0 0 .946-.326L12.15 11zM8.5 11h-1v2.5a.5.5 0 0 0 1 0V11zm-3.592 0H3.85l-1.323 3.837a.5.5 0 1 0 .946.326L4.908 11z"/>
     <path fill-rule="evenodd" d="M14 3H2v7h12V3zM2 2a1 1 0 0 0-1 1v7a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V3a1 1 0 0 0-1-1H2z"/>
   </svg>
   <a class="anchor" id="portfolio"></a>
-  <h2  class="slide-left">PROJECTS</h2>
+  <h2  class="slide-left">RECENT PROJECTS</h2>
 
 <!-- ROW 1 -->
   <div class="row">
+
     <div class="col-sm-6 col-lg-4 mb-3 ">
       <div class="card">
         <img src="images/project_images/portfolio-1.png" class="card-img-top" alt="...">
         <div class="card-body">
-          <h5 class="card-title">Special title treatment</h5>
-          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+          <h5 class="card-title">Employee Directory API</h5>
+          <p class="card-text">Many sites — Twitter, Facebook, IMDB, and Wikipedia to name a few — offer a vast sea of data that you can access and display on your own web pages. Using JavaScript, you’ll create an employee directory by communicating with a third-party API (Application Programming Interface).</p>
           <a href="#" class="btn btn-primary">Click to view</a>
         </div>
       </div>
@@ -114,8 +121,8 @@
       <div class="card">
         <img src="images/project_images/portfolio-2.png" class="card-img-top" alt="...">
         <div class="card-body">
-          <h5 class="card-title">Special title treatment</h5>
-          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+          <h5 class="card-title">WebApp Dashboard</h5>
+          <p class="card-text">Build an interactive dashboard for a web application using advanced web techniques including SVG graphics and JavaScript programming. The project involves creating tables, charts, graphics and other user interface components in a manner that promotes interactivity and usability.</p>
           <a href="#" class="btn btn-primary">Click to view</a>
         </div>
       </div>
@@ -124,9 +131,9 @@
       <div class="card">
         <img src="images/project_images/portfolio-3.png" class="card-img-top" alt="...">
         <div class="card-body">
-          <h5 class="card-title">Special title treatment</h5>
-          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-          <a href="#" class="btn btn-outline-primary">Click to view</a>
+          <h5 class="card-title">Star Wars Gameshow App</h5>
+          <p class="card-text">In this project, you'll create a browser version of “Wheel of Success”, a word guessing game. You’ll use Javascript to come up with a random phrase that players will try to guess by entering different letters into the program.</p>
+          <a href="#" class="btn btn-primary">Click to view</a>
         </div>
       </div>
     </div>
@@ -134,30 +141,30 @@
     <!-- Row 2 -->
     <div class="col-sm-6 col-lg-4 mb-3">
       <div class="card">
-        <img src="images/project_images/portfolio-4.png" class="card-img-top" alt="...">
+        <img src="images/project_images/portfolio-5.png" class="card-img-top" alt="...">
         <div class="card-body">
-          <h5 class="card-title">Special title treatment</h5>
-          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+          <h5 class="card-title">Interactive Photo Gallery</h5>
+          <p class="card-text">Interactive image galleries are a common feature of many websites, from photo sites to e-commerce applications. Use HTML, CSS and the popular programming language JavaScript to create an interactive, searchable gallery of photos.</p>
           <a href="#" class="btn btn-primary">Click to view</a>
         </div>
       </div>
     </div>
     <div class="col-sm-6 col-lg-4 mb-3">
       <div class="card">
-        <img src="images/project_images/portfolio-5.png" class="card-img-top" alt="...">
+        <img src="images/project_images/portfolio-4.png" class="card-img-top" alt="...">
         <div class="card-body">
-          <h5 class="card-title">Special title treatment</h5>
-          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+          <h5 class="card-title">Web Style Guide</h5>
+          <p class="card-text">Sass is an important tool in a modern Front End Web Developer’s toolbox. It's used by many developers to make styling web pages with CSS easier and faster. Create a style guide that can act as your own personal and custom Bootstrap that you can drop into any of your projects to speed up styling, layout and development in general.</p>
           <a href="#" class="btn btn-primary">Click to view</a>
         </div>
       </div>
     </div>
-    <div class="col-sm-6 col-lg-4">
+    <div class="col-sm-6 col-lg-4 mb-3">
       <div class="card">
         <img src="images/project_images/portfolio-6.png" class="card-img-top" alt="...">
         <div class="card-body">
-          <h5 class="card-title">Special title treatment</h5>
-          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+          <h5 class="card-title">Online Registration Form</h5>
+          <p class="card-text">Web forms appear everywhere online: forms allow users to order books, sign up for websites, and post to Facebook. This project challenges you to build a responsive, mobile-first registration form using a variety of HTML form elements.</p>
           <a href="#" class="btn btn-primary">Click to view</a>
         </div>
       </div>
@@ -201,8 +208,30 @@
 
 
 <!-- SOCIAL MEDIA ICONS -->
+    </div>
+  </div>
+</div>
 
 
+  <nav class="navbar navbar-expand-md navbar-dark py-3 bottom" id="nav-bottom">
+    <div class="container">
+    <a class="navbar-brand" href="index.html">joseph.johnson</a>
+
+
+    <div class="">
+      <ul class="nav ml-auto pr-3">
+        <li class="nav">
+          <a class="nav-link" href="#home"><i class="fa fa-instagram" style="font-size:30px"></i> <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav">
+          <a class="nav-link" href="#portfolio"><i class="fa fa-facebook-official" style="font-size:30px"></i></a>
+        </li>
+        <li class="nav">
+          <a class="nav-link" href="#portfolio"><i class="fa fa-github" style="font-size:36px"></i></a>
+        </li>
+      </ul>
+    </div>
+  </nav>
 
 
 

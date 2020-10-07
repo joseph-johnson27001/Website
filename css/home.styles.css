@@ -14,7 +14,7 @@ body {
 /* NAVIGATION */
 /* ------------------------------- */
 
-nav {
+#nav-top {
     animation: fadeInDown .5s linear;
 }
 
@@ -39,6 +39,10 @@ nav a {
 }
 
 
+/* Bottom Navigation */
+
+
+
 /* ------------------------------- */
 /* MAIN */
 /* ------------------------------- */
@@ -48,18 +52,15 @@ nav a {
 .container h2 {
   text-align: center;
   color: #313133;
-  font-weight: 400;
-}
-
-.container h3,
-.container h4,
-.container h5,
-.container h6 {
   font-weight: 100;
 }
 
 
 /* Body */
+
+.card {
+  height: 100%;
+}
 
 .main {
   padding: 1rem;
@@ -70,7 +71,7 @@ nav a {
 }
 
 .slide-left {
-  animation:slideInFromLeft .8s linear;
+  animation:slideInFromLeft 1s linear;
 }
 
 .slide-right {
@@ -90,8 +91,9 @@ nav a {
 }
 
 /* Bounce animation for icons */
+
 .bounce {
-    animation-name: bounce-7;
+    animation-name: jump;
     animation-timing-function: cubic-bezier(0.280, 0.840, 0.420, 1);
     animation-duration: 2s;
 }
@@ -113,6 +115,11 @@ nav a {
   background-color: white;
 }
 
+.jumbo-container {
+  max-width: 1000px;
+
+}
+
 /* ------------------------------- */
 /* ABOUT SECTION */
 /* ------------------------------- */
@@ -126,6 +133,12 @@ nav a {
 /* ------------------------------- */
 /* PORTFOLIO */
 /* ------------------------------- */
+
+/* Buttons */
+
+
+
+
 
 
 /* ------------------------------- */
@@ -196,7 +209,7 @@ nav a {
 /* BOUNCE ANIMATION FOR ICONS */
 
 
-@keyframes bounce-7 {
+@keyframes jump {
     0%   { transform: scale(1,1)      translateY(0); }
     10%  { transform: scale(1.1,.9)   translateY(0); }
     30%  { transform: scale(.9,1.1)   translateY(-50px); }
