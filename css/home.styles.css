@@ -40,6 +40,7 @@ nav a {
 }
 
 
+
 /* Bottom Navigation */
 
 
@@ -53,7 +54,7 @@ nav a {
 .container h2 {
   text-align: center;
   color: #313133;
-  font-weight: 100;
+  font-weight: 400;
 }
 
 
@@ -115,7 +116,7 @@ nav a {
 .jumbotron {
   background-image: url("../images/balloons.webp");
   background-size: cover;
-  background-position: 50%;
+  background-position: 20%;
 }
 
 

@@ -105,6 +105,7 @@ svg {
   stroke-dashoffset: 350;
   animation: offset 5s linear forwards, fill-it 2s 1s forwards;
 }
+
 .icon {
   max-height: 280px;
   margin-bottom: -120px;
