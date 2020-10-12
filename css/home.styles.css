@@ -6,7 +6,7 @@ html {
 }
 
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Rubik', sans-serif;
 }
 
 
@@ -16,12 +16,13 @@ body {
 
 #nav-top {
     animation: fadeInDown .5s linear;
-    border-bottom: 1px solid gold;
+    border-bottom: 1px solid skyblue;
 }
 
 .navbar {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Rubik', sans-serif;
   background-color: black;
+  max-height: 65px;
 }
 
 nav a {
@@ -33,13 +34,26 @@ nav a {
 .navbar-toggler:active {
   outline: none;
   box-shadow: none;
+  color: skyblue;
 }
 
-.container {
-  position: relative;
+/* Navbar links on hover */
+
+#navbarNav ul a:focus,
+#navbarNav ul a:active,
+#navbarNav ul a:hover {
+  color: skyblue;
 }
 
+#navbar-icon {
+  max-height: 40px;
+  max-width: 40px;
+}
 
+.navbar-brand:hover {
+  transform: scale(1.1);
+  transition: .6s;
+}
 
 /* Bottom Navigation */
 
@@ -51,14 +65,38 @@ nav a {
 
 /* HEADINGS */
 
+
+
+
+/*  Practice area */
+
+
+
+
+
+
+
+
+
+
+
 .container h2 {
   text-align: center;
   color: #313133;
   font-weight: 400;
+  margin-bottom: 2rem;
+}
+
+/* Body */
+
+.main .container {
+
 }
 
 
-/* Body */
+.container {
+  position: relative;
+}
 
 .card {
   height: 100%;
@@ -81,7 +119,15 @@ nav a {
 }
 
 .slide-up-one {
-  animation:slideInFromBottom .6s ease-in;
+  animation:slideInFromBottom 1.2s ease-out;
+}
+
+.slide-up-two {
+    animation:slideInFromBottom 1.4s ease-out;
+}
+
+.slide-up-three {
+    animation:slideInFromBottom 1.6s ease-out;
 }
 
 .fade-in {
@@ -89,7 +135,7 @@ nav a {
 	animation-name: fadeInOpacity;
 	animation-iteration-count: 1;
 	animation-timing-function: linear;
-	animation-duration: .5s;
+	animation-duration: 1s;
 }
 
 /* Bounce animation for icons */
@@ -114,12 +160,25 @@ nav a {
 /* ------------------------------- */
 
 .jumbotron {
-  background-image: url("../images/balloons.webp");
-  background-size: cover;
-  background-position: 20%;
+  box-shadow: 0px 10px 5px #aaaaaa;
+  background: black;
 }
 
+.jumbotron-left {
+  background-color: black;
+}
 
+#jumbotron-row {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 2rem;
+}
+
+#jumbotron-right {
+    background-image: url("../images/R2D2capture2.jpg");
+    background-size: cover;
+}
 
 /* ------------------------------- */
 /* ABOUT SECTION */
@@ -137,8 +196,9 @@ nav a {
 
 /* Buttons */
 
-
-
+.button-width {
+  width: 80%;
+}
 
 
 
@@ -146,11 +206,16 @@ nav a {
 /* CONTACT AREA */
 /* ------------------------------- */
 
-.grey{
-  background-color: grey;
+
+/* #contact-form {
+  max-width: 80%;
+  margin: auto;
+} */
+
+
+#contact-heading {
+  display: none;
 }
-
-
 
 /* ------------------------------- */
 /* KEY FRAMES & ANIMATIONS */
@@ -181,6 +246,9 @@ nav a {
     transform: translateY(100%);
     opacity: 0;
   }
+  65% {
+    transform: translateY(100%);
+  }
   100% {
     transform: translateY(0);
     opacity: 1;
@@ -191,6 +259,9 @@ nav a {
 	0% {
 		opacity: 0;
 	}
+  25% {
+    opacity: 0;
+  }
 	100% {
 		opacity: 1;
 	}
