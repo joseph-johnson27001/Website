@@ -89,9 +89,6 @@ nav a {
 
 /* Body */
 
-.main .container {
-
-}
 
 
 .container {
@@ -107,7 +104,7 @@ nav a {
 }
 
 .slide-header {
-    animation:slideInFromLeft .3s linear;
+    animation:slideInFromLeft 1s linear;
 }
 
 .slide-left {
@@ -115,7 +112,7 @@ nav a {
 }
 
 .slide-right {
-  animation:slideInFromRight .8s linear;
+  animation:slideInFromRight .5s linear;
 }
 
 .slide-up-one {
@@ -136,6 +133,14 @@ nav a {
 	animation-iteration-count: 1;
 	animation-timing-function: linear;
 	animation-duration: 1s;
+}
+
+.fade-in-2 {
+  opacity: 1;
+  animation-name: fadeInOpacity;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+  animation-duration: .5s;
 }
 
 /* Bounce animation for icons */
