@@ -246,6 +246,18 @@ nav a {
   display: none;
 }
 
+.alert {
+  margin-top: 2rem;
+  clear: both;
+}
+
+#sent-message {
+  display: none;
+}
+
+#failed-message {
+  display: none;
+}
 /* ------------------------------- */
 /* KEY FRAMES & ANIMATIONS */
 /* ------------------------------- */
