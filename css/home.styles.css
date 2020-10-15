@@ -25,6 +25,10 @@ body {
   max-height: 65px;
 }
 
+.navbar-collapse {
+  background-color: black;
+}
+
 nav a {
   color: white;
   font-size: 1.1rem;
@@ -164,10 +168,20 @@ nav a {
 /* JUMBOTRON SECTION */
 /* ------------------------------- */
 
-.jumbotron {
+#jumbotron {
   box-shadow: 0px 10px 5px #aaaaaa;
-  background: black;
+  background-color: black;
 }
+
+@media (max-width: 768px ) {
+  .jumbotron-left {
+    background-image: url("../images/R2D2capture2.jpg");
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: top right;
+  }
+}
+
 
 .jumbotron-left {
   background-color: black;
@@ -177,12 +191,22 @@ nav a {
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
-  padding: 2rem;
+  padding-bottom: 2rem;
+  padding-top: 2rem;
 }
 
 #jumbotron-right {
     background-image: url("../images/R2D2capture2.jpg");
     background-size: cover;
+}
+
+@media (max-width: 992px) {
+  .jumbotron h1 {
+    font-size: 40px;
+  }
+  .jumbotron p {
+    font-size: 20px;
+  }
 }
 
 /* ------------------------------- */

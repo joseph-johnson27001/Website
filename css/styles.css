@@ -1,6 +1,8 @@
 body {
   font-family: 'Open Sans', sans-serif;
   background-color: black;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 .center {
@@ -107,15 +109,10 @@ svg {
 }
 
 .icon {
-  max-height: 280px;
-  margin-bottom: -120px;
-  display: block;
+  max-height: 70px;
   clear: both;
-  stroke: white;
-  stroke-width: 0.5;
-  stroke-dasharray: 650;
-  stroke-dashoffset: 650;
   animation: offset 1.2s 1.4s linear forwards, fadeInIcon 1.4s 1s backwards;
+  text-align: center;
 }
 
 #slide {

@@ -1,6 +1,3 @@
-
-
-
 // jQuery function for icons and scrolling headers - Currently only for contact area
       var heading = document.getElementById("contact-heading");
   $(window).scroll(function() {
