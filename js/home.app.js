@@ -18,7 +18,18 @@ const messageButton = document.getElementById("message-button");
 const sentMessage = document.getElementById("sent-message");
 const failedMessage = document.getElementById("failed-message");
 
-messageButton.addEventListener("click", sendMessage);
+messageButton.addEventListener("click", () => {
+  sentMessage.style.display = "none";
+  failedMessage.style.display = "none";
+    if (firstNameMessage.value == "" || secondNameMessage.value == "" || emailMessage.value == "" || messageMessage.value == "") {
+      failedMessageSend();
+      return
+    }
+    else {
+      sendMessage();
+      return
+    }
+});
 
 function sendMessage() {
   sentMessage.style.display = "block";
@@ -29,6 +40,13 @@ function failedMessageSend() {
 }
 
 // TO DO FOR CONTACT FORM
+
+//CONTACT FORM VARIABLES
+
+let firstNameMessage = document.getElementById("first-name-message");
+let secondNameMessage = document.getElementById("second-name-message");
+let emailMessage = document.getElementById("email-message");
+let messageMessage = document.getElementById("message-message");
 
 // Give all form areas an id and make into variables
 // Check if they are blank
