@@ -1,0 +1,142 @@
+/* ------------------------------------------------------------- */
+/* OVERALL STYLINGS */
+/* ------------------------------------------------------------- */
+body {
+  font-family: 'Open Sans', sans-serif;
+  position: relative;
+  margin: auto;
+  max-width: 1400px;
+}
+
+h1 {
+  text-align: left;
+  color: darkslategrey;
+  margin: 20px;
+  font-size: 25px;
+  font-weight: 400;
+}
+
+ h2 {
+  font-weight: 600;
+  font-size: 16px;
+  color: black;
+}
+
+p {
+  color: slategrey;
+  font-size: 14px;
+}
+
+/* ------------------------------------------------------------- */
+/* MAIN STYLING */
+/* ------------------------------------------------------------- */
+
+.grid-container {
+  margin: 0% 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* ------------------------------------------------------------- */
+/* CARD STYLINGS */
+/* ------------------------------------------------------------- */
+
+.card {
+  margin: 10px;
+  border: 1px solid #DCDCDC;
+  border-radius: 5px;
+  padding: 10px 0px;
+  height: 130px;
+  width: 350px;
+}
+
+.avatar {
+  border-radius: 50%;
+  margin: 20px 15px 15px 15px;
+  height: 75px;
+  float: left;
+}
+
+.text-container {
+  display: inline-block;
+}
+
+/* ------------------------------------------------------------- */
+/* MODAL OVERLAY */
+/* ------------------------------------------------------------- */
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(100, 100, 100, 0.5);
+}
+
+.modal {
+  width: 375px;
+  margin: 15% auto auto;
+  position: relative;
+  text-align: center;
+  background: #fff;
+  border: 1px solid #778;
+  border-radius: 5px;
+  padding: 30px 20px;
+}
+
+.modal-close {
+  position: absolute;
+  right: 15px;
+  top: 5px;
+  cursor: pointer;
+}
+
+.modal-left {
+  position: absolute;
+  left: 25px;
+  bottom: 10px;
+}
+
+.modal-right {
+  position: absolute;
+  right: 25px;
+  bottom: 10px;
+}
+
+.hidden {
+  display: none;
+}
+
+
+/* ------------------------------------------------------------- */
+/* SEARCHBOX STYLING */
+/* ------------------------------------------------------------- */
+
+#search-area {
+  text-align: center;
+}
+
+#searchbox {
+  background-color: #e8edeb;
+  padding: 12px 20px;
+  border: 1px solid grey;
+  border-radius: 4px;
+  padding: 20px 200px 20px 20px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100px;
+}
+
+#searchbox:focus {
+  transition: all .2s ease-in-out;
+  transform: scale(1.02);
+  outline: none;
+  border-color: #0277bd;
+  box-shadow: 2px 2px 8px #888888;
+}
+
+input:focus::placeholder {
+  color: transparent;
+}

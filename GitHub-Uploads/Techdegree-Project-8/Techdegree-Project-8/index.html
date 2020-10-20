@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Awesome Startup Employee Directory</title>
+<!-- Style Sheets -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;1,300;1,400&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+    <header>
+        <h1>AWESOME STARTUP EMPLOYEE DIRECTORY</h1>
+    </header>
+    <!-- SEARCHBAR AREA -->
+    <div id="search-area">
+      <input type="text" id="searchbox" name="searchbox" placeholder="Search...">
+    </div>
+
+<!-- MAIN AREA -->
+
+    <main class="grid-container">
+    </main>
+
+<!-- MODAL AREA -->
+
+  <div class="overlay hidden">
+    <div class="modal">
+      <button class="modal-close">X</button>
+      <div class="modal-content">
+        <img class="avatar" src="images/placeholder-images/member-1.jpg">
+        <div class="text-container">
+          <h2 class="name"></h2>
+          <p class="email"></p>
+          <p class="address"></p>
+          <hr>
+          <p class="address"></p>
+        </div>
+      </div>
+      <button class="modal-left"><</button>
+      <button class="modal-right">></button>
+    </div>
+  </div>
+
+    <script src="js/app.js"></script>
+  </body>
+</html>
