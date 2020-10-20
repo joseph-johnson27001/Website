@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <title>The Code Review</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Varela+Round' rel="stylesheet">
+      <link rel="stylesheet" href="css/normalize.css">
+      <link rel="stylesheet" href="css/style.css">
+      <link href='http://fonts.googleapis.com/css?family=Nunito:400,300' rel='stylesheet' type='text/css'>
+      <style>
+        body {
+          font-family: 'Varela Round', serif;
+        }
+      </style>
+  </head>
+  <body>
+    <header class="header"><h1>THE CODE REVIEW</h1></header>
+
+  <div class="container">
+    <div class="banner">
+      <h2>Signup for our newsletter</h2>
+      <h3 id="intro">Get the latest news on how your code is doing right
+      in your inbox </h3>
+    </div>
+  <hr id="line-break-top">
+  <hr id="line-break-bottom">
+
+  <form id="form">
+
+        <fieldset>
+          <legend class="heading">Contact Information</legend>
+        <div class="contact">
+        <div class="flex-container">
+    	 <label for="name">Full Name:</label>
+       <input type="text" id="name" name="name" placeholder="Required" required class="contact-row">
+       </div>
+       <br>
+
+        <div class="flex-container">
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" placeholder="Required" required class="contact-row">
+        </div>
+        <br>
+
+        <div class="flex-container">
+        <label for="tel">Phone Number:</label>
+        <input type="tel" id="tel" name="tel" placeholder="Required" required class="contact-row">
+        </div>
+        <br>
+
+        <div class="flex-container">
+        <label for="street">Street Address:</label>
+        <input type="text" id="street" name="street" class="contact-row">
+        </div>
+        <br>
+
+        <div class="flex-container">
+        <label for="city">City:</label>
+        <input type="text" id="city" class="contact-row" name="city">
+        </div>
+        <br>
+
+        <div class="flex-container">
+        <label for="state">State:</label>
+        <select name="state" id="state" class="contact-row">
+          <option value="" disabled selected>Choose State</option>
+          <option value="Washington">Washington</option>
+          <option value="Oregon">Oregon</option>
+          <option value="California">California</option>
+          <option value="etc">etc</option>
+          </select>
+        </div>
+        <br>
+
+        <div class="flex-container">
+        <label for="zip">Zip Code:</label>
+        <input type="text" id="zip" name="zip">
+        </div>
+    </div>
+    </fieldset>
+
+<hr id="line-break-2">
+
+
+  <div id="newsletter">
+    <fieldset>
+      <legend class="heading">Newsletter</legend>
+        <h4>Select the newsletters you would like to receive </h4>
+    <input type="checkbox" id="html-news" name="html-news" value="HTML" class="selectors">
+    <label for="html-news">HTML News</label>
+    <br>
+    <input type="checkbox" id="css-news" name="css-news" value="CSS" class="selectors">
+    <label for="css-news">CSS News</label>
+    <br>
+    <input type="checkbox" id="javascript-news" name="javascript-news" class="selectors"
+    value="javascript">
+    <label for="javascript-news">JavaScript News</label><br>
+  </fieldset>
+
+  <fieldset>
+    <h4>Newsletter Format:</h4>
+      <input type="radio" id="html-format" name="format" value="html-format" class="selectors">
+      <label for="html-format">HTML</label><br>
+      <input type="radio" id="plain-format" name="format" value="plain-format" class="selectors">
+      <label for="plain-format">Plain Text</label><br>
+    </fieldset>
+</div>
+    <fieldset>
+    <h4>Other areas you'd like to hear about:</h4>
+    <textarea name="other-area" id="other-area" cols="30" rows="5"></textarea>
+    <br>
+    <button type="submit" class="button"> Sign Up</button>
+</fieldset>
+</form>
+
+</div>
+
+<footer>Copyright The Code Review</footer>
+  </body>
+</html>
