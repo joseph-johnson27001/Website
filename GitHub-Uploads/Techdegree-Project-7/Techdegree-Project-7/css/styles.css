@@ -1,0 +1,596 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  width: 100%;
+}
+
+h1 {
+  color: white;
+  font-weight: 400;
+}
+
+ h2, h3 {
+  color: #747474;
+  margin-left: 10px;
+}
+
+/* ------------------------------------------------------------------
+GRID STYLINGS
+------------------------------------------------------------------ */
+
+.grid-container {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-auto-rows: minmax(55px, auto);
+  grid-template-areas:
+    "header"
+    "nav"
+    "main"
+  }
+
+  @media (min-width: 768px) {
+    .grid-container {
+      grid-template-columns: 60px 1fr;
+      grid-template-areas:
+      "header header"
+      "nav main"
+      ;
+    }
+  }
+
+header {
+  grid-area: header;
+}
+
+.main {
+  grid-area: main;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+nav {
+  grid-area: nav;
+}
+
+@media (min-width: 768px) {
+  .main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 75px repeat(5, auto);
+    grid-template-areas:
+      "main-header main-header"
+      "alert alert"
+      "traffic traffic"
+      "daily mobile"
+      "social social"
+      "members activity"
+      "message settings"
+    ;
+  }
+  nav {
+    min-height: 265vh;
+  }
+}
+
+.main-header {
+  grid-area: main-header;
+}
+
+.traffic {
+  grid-area: traffic;
+}
+
+.daily {
+  grid-area: daily;
+}
+
+.mobile {
+  grid-area: mobile;
+}
+
+.social {
+  grid-area: social;
+}
+
+.members {
+  grid-area: members;
+}
+
+.activity {
+  grid-area: activity;
+}
+
+.message {
+  grid-area: message;
+}
+
+.settings {
+  grid-area: settings;
+}
+
+#alert {
+  grid-area: alert;
+  margin: 10px;
+  background-color: #DCDCDC;
+  border: 1px solid black;
+}
+
+.alert-banner {
+  margin: 5px;
+}
+
+@media (min-width: 768px) {
+  .daily,
+  .mobile,
+  .social,
+  .members,
+  .activity {
+    border-top: 1px solid #DCDCDC;
+    padding-bottom: 3px;
+  }
+  .daily,
+  .members,
+  .message {
+    border-right: 1px solid #DCDCDC;
+  }
+  .message,
+  .settings {
+    border-bottom: 1px solid #DCDCDC;
+  }
+}
+
+/* Widget Grid Stylings */
+
+.widget-container-full,
+.widget-container-half {
+  width: 95%;
+  margin: auto;
+}
+
+@media (min-width: 768px) {
+  .widet-container-full {
+    width: 90%;
+  }
+  .widget-container-half {
+    width: 90%;
+  }
+}
+
+/* ------------------------------------------------------------------
+HEADER
+------------------------------------------------------------------ */
+
+header {
+  background-color: #7477BF;
+}
+
+header h3 {
+  color: white;
+}
+
+.header-wrapper {
+  margin: 0px 10px;
+  display: flex;
+}
+
+#bell-icon {
+  padding: 20px 10px 0px 0px;
+  height: 40px;
+  width: 40px;
+  cursor: pointer;
+  transition: .5s;
+  position: relative;
+}
+
+#bell-icon:hover {
+  transform: rotate(10deg) scale(1.1);
+}
+
+#bell-icon-container {
+  display: inline-block;
+  margin-left: auto;
+}
+
+#main-photo-area {
+  display: inline-block;
+  height: 40px;
+  padding-left: 10px;
+  border-left: 1px solid darkslategrey;
+  margin-top: 20px;
+}
+
+#main-profile-image {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+}
+
+#name-area {
+  padding-top: 10px;
+  display: inline-block;
+}
+
+/* NUMBER OF NOTIFICATIONS BADGE */
+
+#bell-icon-container #badge {
+  position: absolute;
+  top: 50px;
+  right: 210px;
+  padding: 3px 8px;
+  border-radius: 50%;
+  background: red;
+  color: white;
+  z-index: 100;
+}
+
+/* DROPDOWN MENU */
+
+#dropdown {
+  position: absolute;
+  z-index: 1000;
+  color: purple;
+  background-color: white;
+  border: 1px solid #DCDCDC;
+  display: none;
+  top: 76px;
+}
+
+/* ------------------------------------------------------------------
+NAVIGATION
+------------------------------------------------------------------ */
+
+#navigation {
+  background-color: #4D4C72;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  #navigation {
+    padding-top: 20px;
+  }
+}
+
+.nav-icon {
+  margin: 5px;
+  width: 50px;
+  height: 50px;
+}
+
+
+/* ------------------------------------------------------------------
+MAIN
+------------------------------------------------------------------ */
+/* Dashboard & Searchbar */
+
+.main-header {
+  display: flex;
+  position: relative;
+}
+
+.main-header-search {
+  position: absolute;
+  right: 0;
+  text-align: right;
+  background-color: #DCDCDC;
+  border-bottom-left-radius: 25px;
+  width: 60%;
+  right: 0;
+  margin-right: -20px;
+}
+
+.main-header-container {
+  display: inline-block;
+  width: 30%;
+}
+
+#searchbar {
+  display: inline-block;
+  margin: 1em;
+  width: 80%;
+  max-width: 400px;
+  height: 50%;
+  border: 1px solid grey;
+  outline: none;
+}
+
+/* Traffic Area */
+
+.traffic-header h3 {
+  float:left;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+#traffic-nav {
+  list-style-type: none;
+  text-align: right;
+  margin-right: 20px;
+}
+
+.traffic-button:focus {
+  background-color: #78CF82;
+  color: white;
+}
+
+.traffic-nav-link {
+  display: inline-block;
+}
+
+.traffic-nav-link a {
+  display: block;
+  color: black;
+  background-color: white;
+  border-radius: 15px;
+  text-align: center;
+  margin-top: 3px;
+  padding: 8px;
+  text-decoration: none;
+}
+
+
+/* Social Stats */
+
+.social-area {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.social-image {
+  float: left;
+}
+
+.social-text {
+  float: right;
+}
+
+.social-container {
+  display: block;
+  margin: 1em 0;
+}
+
+@media (min-width: 768px) {
+  .social-container {
+    border-radius: 2%;
+    width: 30%;
+    margin:0 3px 3em 0;
+    border: 1px solid #DCDCDC;
+    display: flex;
+    max-width: 300px;
+  }
+  .social-image {
+    margin-top: .5em;
+  }
+  .social-numbers {
+    font-size: 35px;
+    margin-left: -5px;
+    font-weight: 100;
+  }
+  .social-company {
+    margin-top: 25px;
+  }
+}
+
+.icon-area {
+  display: inline-block;
+  background-color: #7377BF;
+  padding: 10px;
+  border-radius: 50%;
+  margin: 5px;
+}
+
+
+.social-company {
+  color: #7377BF;
+  font-weight: bold;
+}
+
+/* New Members & Recent Activity */
+
+.members-container,
+.recent-activity-container {
+  height: 130px;
+  border-bottom: 1px solid #DCDCDC;
+  position: relative;
+}
+
+@media (min-width: 768px) {
+.members-container,
+.recent-activity-container {
+  height: 150px;
+  }
+}
+
+.profile-image {
+  margin: 30px 5px 0px 15px;
+  display: inline-block;
+  border-radius: 50%;
+  height: 45px;
+  width: 45px;
+}
+
+.members-text,
+.comment {
+  display: inline-block;
+  font-size: 12px;
+}
+
+.member-date {
+  display: inline-block;
+  position: absolute;
+  right: 10px;
+}
+
+.member-activity-heading {
+  margin-bottom: -20px;
+}
+
+/* Message User Area */
+
+.message {
+  text-align: center;
+}
+
+.message h3 {
+  text-align: left;
+  margin-left: 10px;
+}
+
+.form-field,
+.form-area {
+  width: 96%;
+  margin: 5px;
+  clear: both;
+  border: 1px solid #DCDCDC;
+  outline: none;
+}
+
+#searchbar:focus,
+.form-field:focus,
+.form-area:focus{
+  border: 2px solid lightblue;
+}
+
+.form-field {
+  height: 30px;
+  margin-bottom: 10px;
+}
+
+.message-button-primary {
+  width: 80%;
+  margin: 5px;
+  height: 45px;
+  color: white;
+  background-color: #7377BF;
+  border: 1px solid #DCDCDC;
+  transition: .3s;
+  outline: none;
+}
+
+.message-button-primary:hover {
+  transform: scale(1.05)
+}
+
+.form-area {
+  height: 125px;
+}
+
+/* Settings Area */
+
+.settings {
+  position: relative;
+}
+
+.settings-text {
+  display: inline-block;
+  width: 200px;
+}
+
+.settings-area {
+  margin-left: 10px;
+}
+
+.timezone-area {
+  text-align: center;
+
+}
+@media (min-width: 768px) {
+    .timezone-area {
+    position: absolute;
+    bottom: 5px;
+    width: 96%;
+  }
+}
+
+.settings-buttons {
+  text-align: center;
+}
+
+.settings-button-primary {
+    background-color: #7377BF;
+}
+
+.settings-button-disabled {
+  background-color: #B2B2B2;
+}
+
+.settings-button-primary,
+.settings-button-disabled {
+  color: white;
+  border: 1px solid #DCDCDC;
+  width: 48%;
+  height: 45px;
+  transition: .3s;
+  outline: none;
+}
+
+.settings-button-primary:hover,
+.settings-button-disabled:hover {
+  transform: scale(1.03)
+}
+
+/* ------------------------------------------------------------------
+RADIO BUTTON STYLING (IN SETTINGS)
+------------------------------------------------------------------ */
+
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #7477BF;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #7477BF;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
