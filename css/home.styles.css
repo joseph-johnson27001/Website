@@ -71,10 +71,26 @@ nav a {
 
 
 
+/* RECENT WORK AREA */
 
-/*  Practice area */
+.card-img {
+  height: 300px;
+  width: auto;
+}
 
+#recent-work-container .card:hover {
+  opacity: 0.6;
+  transition: .5s linear;
+}
 
+.card-img-overlay {
+  opacity: 0;
+}
+
+.card-img-overlay:hover {
+  opacity: 1;
+  transition: .5s linear;
+}
 
 
 
