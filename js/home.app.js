@@ -5,7 +5,7 @@
 
 // Below function will make the icon bounce and the contact heading scroll in from the left when the user scrolls to that area
 
-      var heading = document.getElementById("contact-heading");
+      var contactHeading = document.getElementById("contact-heading");
   $(window).scroll(function() {
       var top_of_element = $("#contact-form").offset().top;
       var bottom_of_element = $("#contact-form").offset().top + $("#contact-form").outerHeight();
@@ -13,10 +13,24 @@
       var top_of_screen = $(window).scrollTop();
 
       if ((bottom_of_screen > top_of_element) && (top_of_screen < bottom_of_element)){
-          heading.style.display = "block";
+          contactHeading.style.display = "block";
       }
   });
 
+
+// Below function will make the about SVG and headings style display change to block from none:
+
+var aboutHeading = document.getElementById("about-area");
+$(window).scroll(function() {
+  var top_of_element = $("#about-container").offset().top;
+  var bottom_of_element = $("#about-container").offset().top + $("#about-container").outerHeight();
+  var bottom_of_screen = $(window).scrollTop() + $(window).innerHeight();
+  var top_of_screen = $(window).scrollTop();
+
+if ((bottom_of_screen > top_of_element) && (top_of_screen < bottom_of_element)){
+    aboutHeading.style.display = "block";
+}
+});
 
 // Variables for contact form
 
