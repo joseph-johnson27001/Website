@@ -3,6 +3,7 @@
 /* ------------------------------- */
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
@@ -12,8 +13,6 @@ body {
 .row {
   padding-bottom: 2rem;
 }
-
-
 
 /* ------------------------------- */
 /* NAVIGATION */
@@ -47,15 +46,13 @@ nav a {
   font-weight: 100;
 }
 
-.navbar-toggler:active {
-  outline: none;
-  box-shadow: none;
-  color: skyblue;
-}
-
 #navigation-container ul a {
   color: white;
   height: 40px;
+}
+
+#navigation-container .active {
+  color: skyblue;
 }
 
 /* Navbar links on hover */
@@ -76,6 +73,10 @@ nav a {
   transition: .6s;
 }
 
+
+#navbarNavDropdown {
+  width: 100vw;
+}
 /* Bottom Navigation */
 
 #nav-bottom {
@@ -274,6 +275,7 @@ nav a {
 /* ------------------------------- */
 
 #about-me-chart-area {
+  display: none;
   margin: auto;
 }
 
@@ -301,6 +303,7 @@ h6 {
   width: 80%;
 }
 
+#projects-heading,
 #project-card-one,
 #project-card-two,
 #project-card-three {
@@ -402,6 +405,7 @@ h6 {
 /* ------------------------------- */
 /* SVG STILES */
 /* ------------------------------- */
+
 .svg {
   display: inline-block;
   float: left;
