@@ -18,10 +18,17 @@ body {
 /* ------------------------------- */
 /* NAVIGATION */
 /* ------------------------------- */
+nav {
+  z-index: 1000;
+}
 
 #nav-top {
-    animation: fadeInDown .5s linear;
-    border-bottom: 1px solid skyblue;
+  animation: fadeInDown .5s linear;
+  border-bottom: 1px solid skyblue;
+}
+
+#navigation-container {
+  max-width: 1200px;
 }
 
 .navbar {
@@ -46,11 +53,16 @@ nav a {
   color: skyblue;
 }
 
+#navigation-container ul a {
+  color: white;
+  height: 40px;
+}
+
 /* Navbar links on hover */
 
-#navbarNav ul a:focus,
-#navbarNav ul a:active,
-#navbarNav ul a:hover {
+#navigation-container ul a:focus,
+#navigation-container ul a:active,
+#navigation-container ul a:hover {
   color: skyblue;
 }
 
@@ -81,8 +93,8 @@ nav a {
 /* RECENT WORK AREA */
 
 .card-img {
-  height: 300px;
-  width: 300px;
+  height: 350px;
+  width: 350px;
   margin: auto;
 }
 
@@ -98,7 +110,7 @@ nav a {
   border: none;
   margin-left: auto;
   margin-right: auto;
-    margin-bottom: 3px;
+  margin-bottom: 3px;
 }
 
 @media (min-width 768px max-width: 991px) {
@@ -107,6 +119,7 @@ nav a {
   }
 
   #recent-work-container .card-img {
+    height: 300px;
     width: 600px;
   }
 }
@@ -286,6 +299,12 @@ h6 {
 
 .button-width {
   width: 80%;
+}
+
+#project-card-one,
+#project-card-two,
+#project-card-three {
+  display: none;
 }
 
 /* ------------------------------- */

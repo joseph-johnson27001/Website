@@ -1,36 +1,64 @@
-// CONTACT AREA
+// -------------------------------------------------
+// NAVIGATION AREA
+// ------------------------------------------------
 
-// jQuery function for icons and scrolling headers - Currently only for contact area
 
 
-// Below function will make the icon bounce and the contact heading scroll in from the left when the user scrolls to that area
 
-      var contactHeading = document.getElementById("contact-heading");
+// -------------------------------------------------
+// FUNCITONS RELATING TO WHERE VIEWER IS ON PAGE
+// ------------------------------------------------
+
+// Below: Funtion to make project cards appear on window scroll
+
+var projectCardOne = document.getElementById("project-card-one");
+var projectCardTwo = document.getElementById("project-card-two");
+var projectCardThree = document.getElementById("project-card-three");
+
+  $(window).scroll(function() {
+      var top_of_element = $("#projects-heading").offset().top;
+      var bottom_of_element = $("#projects-heading").offset().top + $("#projects-heading").outerHeight();
+      var bottom_of_screen = $(window).scrollTop() + $(window).innerHeight();
+      var top_of_screen = $(window).scrollTop();
+        if ((bottom_of_screen > top_of_element) && (top_of_screen < bottom_of_element)){
+            projectCardOne.style.display = "block";
+            projectCardTwo.style.display = "block";
+            projectCardThree.style.display = "block";
+        }
+  });
+
+
+// Function for contact headings to appear on scroll
+
+var contactHeading = document.getElementById("contact-heading");
+
   $(window).scroll(function() {
       var top_of_element = $("#contact-form").offset().top;
       var bottom_of_element = $("#contact-form").offset().top + $("#contact-form").outerHeight();
       var bottom_of_screen = $(window).scrollTop() + $(window).innerHeight();
       var top_of_screen = $(window).scrollTop();
-
-      if ((bottom_of_screen > top_of_element) && (top_of_screen < bottom_of_element)){
-          contactHeading.style.display = "block";
-      }
+        if ((bottom_of_screen > top_of_element) && (top_of_screen < bottom_of_element)){
+            contactHeading.style.display = "block";
+        }
   });
 
-
-// Below function will make the about SVG and headings style display change to block from none:
+// Function for about headings to appear on scroll
 
 var aboutHeading = document.getElementById("about-area");
-$(window).scroll(function() {
-  var top_of_element = $("#about-container").offset().top;
-  var bottom_of_element = $("#about-container").offset().top + $("#about-container").outerHeight();
-  var bottom_of_screen = $(window).scrollTop() + $(window).innerHeight();
-  var top_of_screen = $(window).scrollTop();
 
-if ((bottom_of_screen > top_of_element) && (top_of_screen < bottom_of_element)){
-    aboutHeading.style.display = "block";
-}
+  $(window).scroll(function() {
+    var top_of_element = $("#about-container").offset().top;
+    var bottom_of_element = $("#about-container").offset().top + $("#about-container").outerHeight();
+    var bottom_of_screen = $(window).scrollTop() + $(window).innerHeight();
+    var top_of_screen = $(window).scrollTop();
+      if ((bottom_of_screen > top_of_element) && (top_of_screen < bottom_of_element)){
+          aboutHeading.style.display = "block";
+      }
 });
+
+// -------------------------------------------------
+// CONTACT FORM AREA
+// ------------------------------------------------
 
 // Variables for contact form
 
