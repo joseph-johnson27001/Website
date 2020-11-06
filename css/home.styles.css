@@ -76,6 +76,7 @@ nav a {
 /* Bottom Navigation */
 
 #nav-bottom {
+  opacity: 0;
   max-height: 53px;
 }
 
@@ -167,6 +168,7 @@ nav a {
   padding-bottom: 0px;
   max-width: 1200px;
   margin: auto;
+  display: none;
 }
 
 

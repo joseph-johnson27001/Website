@@ -14,6 +14,17 @@ for (var i = 0; i < btns.length; i++) {
 }
 
 // -------------------------------------------------
+// FUNCITONS FOR MAIN TO LOAD AFTER .5 SECONDS
+// ------------------------------------------------
+
+ setTimeout(
+      function loadFunction(){
+          document.getElementsByClassName("main")[0].style.display = "block";
+          document.getElementById("nav-bottom").style.opacity = "1";
+      }, 780
+);
+
+// -------------------------------------------------
 // FUNCITONS RELATING TO WHERE VIEWER IS ON PAGE
 // ------------------------------------------------
 
