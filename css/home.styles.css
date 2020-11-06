@@ -10,10 +10,6 @@ body {
   font-family: 'Rubik', sans-serif;
 }
 
-.row {
-  padding-bottom: 2rem;
-}
-
 /* ------------------------------- */
 /* NAVIGATION */
 /* ------------------------------- */
@@ -162,6 +158,10 @@ nav a {
   z-index: 1000;
 }
 
+.row {
+  padding-bottom: 2rem;
+}
+
 .main {
   padding: 1rem;
   padding-bottom: 0px;
@@ -169,53 +169,6 @@ nav a {
   margin: auto;
 }
 
-.slide-header {
-    animation:slideInFromLeft 1s linear;
-}
-
-.slide-left {
-  animation:slideInFromLeft 1s linear;
-}
-
-.slide-right {
-  animation:slideInFromRight .5s linear;
-}
-
-.slide-up-one {
-  animation:slideInFromBottom 1.2s ease-out;
-}
-
-.slide-up-two {
-    animation:slideInFromBottom 1.4s ease-out;
-}
-
-.slide-up-three {
-    animation:slideInFromBottom 1.6s ease-out;
-}
-
-.fade-in {
-	opacity: 1;
-	animation-name: fadeInOpacity;
-	animation-iteration-count: 1;
-	animation-timing-function: linear;
-	animation-duration: 1s;
-}
-
-.fade-in-2 {
-  opacity: 1;
-  animation-name: fadeInOpacity;
-  animation-iteration-count: 1;
-  animation-timing-function: linear;
-  animation-duration: .5s;
-}
-
-/* Bounce animation for icons */
-
-.bounce {
-    animation-name: jump;
-    animation-timing-function: cubic-bezier(0.280, 0.840, 0.420, 1);
-    animation-duration: 2s;
-}
 
 /* Anchor tags for navigation bar offset */
 
@@ -402,8 +355,60 @@ h6 {
     100% { transform: scale(1,1)      translateY(0); }
 }
 
+/* --------------------------------------------------
+CLASS ANIMATIONS
+----------------------------------------------------- */
+
+.slide-header {
+    animation:slideInFromLeft 1s linear;
+}
+
+.slide-left {
+  animation:slideInFromLeft 1s linear;
+}
+
+.slide-right {
+  animation:slideInFromRight .5s linear;
+}
+
+.slide-up-one {
+  animation:slideInFromBottom 1.2s ease-out;
+}
+
+.slide-up-two {
+    animation:slideInFromBottom 1.4s ease-out;
+}
+
+.slide-up-three {
+    animation:slideInFromBottom 1.6s ease-out;
+}
+
+.fade-in {
+	opacity: 1;
+	animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: linear;
+	animation-duration: 1s;
+}
+
+.fade-in-2 {
+  opacity: 1;
+  animation-name: fadeInOpacity;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+  animation-duration: .5s;
+}
+
+/* Bounce animation for icons */
+
+.bounce {
+    animation-name: jump;
+    animation-timing-function: cubic-bezier(0.280, 0.840, 0.420, 1);
+    animation-duration: 2s;
+}
+
 /* ------------------------------- */
-/* SVG STILES */
+/* SVG STYLES */
 /* ------------------------------- */
 
 .svg {

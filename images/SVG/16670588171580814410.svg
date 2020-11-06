@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?> <svg id="chart_presentation" data-name="chart presentation" xmlns="http://www.w3.org/2000/svg" width="64" height="61.179" viewBox="0 0 64 61.179">
+  <path id="Rectangle_325" data-name="Rectangle 325" d="M1,14.972A2,2,0,0,1,.265,12.24L7.3.062l3.464,2L3.729,14.241A2,2,0,0,1,1,14.972Zm28.7-.794L22.665,2l3.464-2L33.16,12.178a2,2,0,1,1-3.464,2ZM14.665,10.062v-8h4v8a2,2,0,0,1-4,0Z" transform="translate(15.335 45.938)" fill="#e87e03"/>
+  <path id="Rectangle_323" data-name="Rectangle 323" d="M0,6V2H28V0h8V2H64V6Z" fill="#3c566f"/>
+  <g id="Rectangle_324" data-name="Rectangle 324" transform="translate(2 2)" fill="#fff" stroke="#3c566f" stroke-miterlimit="10" stroke-width="4">
+    <rect width="60" height="46" rx="4" stroke="none"/>
+    <rect x="2" y="2" width="56" height="42" rx="2" fill="none"/>
+  </g>
+  <rect id="Rectangle_311" data-name="Rectangle 311" width="8" height="22" rx="3.2" transform="translate(16 20)" fill="#1ece6d"/>
+  <rect id="Rectangle_311-2" data-name="Rectangle 311" width="8" height="30" rx="3.2" transform="translate(28 12)" fill="#2c97de"/>
+  <rect id="Rectangle_311-3" data-name="Rectangle 311" width="8" height="16" rx="3.2" transform="translate(40 26)" fill="#e94b35"/>
+</svg>
