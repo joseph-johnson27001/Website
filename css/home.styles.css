@@ -117,7 +117,7 @@ nav a {
   }
 
   #recent-work-container .card-img {
-    height: 300px;
+    height: 500px;
     width: 600px;
   }
 }
@@ -232,6 +232,7 @@ nav a {
 #about-me-chart-area {
   display: none;
   margin: auto;
+  text-align: center;
 }
 
 #about-row {
@@ -242,10 +243,25 @@ nav a {
   display: none;
 }
 
-#about-area h5,
+h5,
 h6 {
   font-style: italic;
   text-align: center;
+}
+
+h4 {
+  font-style: italic;
+  font-weight: 100;
+}
+
+.photo-items {
+  display: inline-block;
+  margin: none;
+  padding: none;
+}
+
+#photo-gallery {
+  padding: 0px;
 }
 
 /* ------------------------------- */
@@ -263,6 +279,10 @@ h6 {
 #project-card-two,
 #project-card-three {
   display: none;
+}
+
+.card ul {
+  margin-top: auto;
 }
 
 /* ------------------------------- */
