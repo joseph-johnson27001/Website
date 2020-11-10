@@ -262,6 +262,20 @@ h4 {
 
 #photo-gallery {
   padding: 0px;
+  margin: 0px;
+}
+
+#photo-gallery img {
+  height: 100%;
+  width: 100%;
+}
+
+
+
+/* MODAL AREA */
+
+.modal {
+  background-color: black;
 }
 
 
