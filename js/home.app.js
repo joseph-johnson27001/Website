@@ -74,7 +74,6 @@ var aboutMeChartArea = document.getElementById("about-me-chart-area")
     var top_of_screen = $(window).scrollTop();
       if ((bottom_of_screen > top_of_element) && (top_of_screen < bottom_of_element)){
           aboutHeading.style.display = "block";
-          aboutMeChartArea.style.display = "block";
       }
 });
 
