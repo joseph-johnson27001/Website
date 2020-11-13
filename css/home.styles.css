@@ -248,6 +248,8 @@ h6 {
   font-weight: 400;
 }
 
+/* PHOTO GALLERIES */
+
 #photo-gallery-container img {
   box-shadow: 5px 10px 8px 5px #888888;
 }
@@ -255,6 +257,11 @@ h6 {
 #photo-gallery-container img:hover {
   opacity: 0.6;
   transition: .5s;
+}
+
+#china-photo-gallery,
+#south-africa-photo-gallery {
+  display: none;
 }
 
 
@@ -279,6 +286,13 @@ h6 {
   max-width: 800px;
 }
 
+
+/* MIXCLOUD MUSIC AREA */
+
+#travel-heading,
+#music-heading {
+  display: none;
+}
 
 /* ------------------------------- */
 /* PORTFOLIO */
@@ -334,9 +348,27 @@ h6 {
   }
 }
 
+@keyframes slideInFromLeft2 {
+  0% {
+    transform: translateX(-150%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
 @keyframes slideInFromRight {
   0% {
     transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInFromRight2 {
+  0% {
+    transform: translateX(150%);
   }
   100% {
     transform: translateX(0);
@@ -405,8 +437,16 @@ CLASS ANIMATIONS
   animation:slideInFromLeft 1s linear;
 }
 
+.slide-left-2 {
+  animation:slideInFromLeft2 1s linear;
+}
+
 .slide-right {
   animation:slideInFromRight .5s linear;
+}
+
+.slide-right-2 {
+  animation:slideInFromRight2 1s linear;
 }
 
 .slide-up-one {
@@ -414,11 +454,11 @@ CLASS ANIMATIONS
 }
 
 .slide-up-two {
-    animation:slideInFromBottom 1.4s ease-out;
+  animation:slideInFromBottom 1.4s ease-out;
 }
 
 .slide-up-three {
-    animation:slideInFromBottom 1.6s ease-out;
+  animation:slideInFromBottom 1.6s ease-out;
 }
 
 .fade-in {

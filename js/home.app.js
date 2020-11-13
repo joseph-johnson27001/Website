@@ -64,8 +64,12 @@ var contactHeading = document.getElementById("contact-heading");
 
 // Function for about items to appear on scroll
 
-var aboutHeading = document.getElementById("about-area");
-var aboutMeChartArea = document.getElementById("about-me-chart-area")
+var aboutHeading = document.getElementById("about-container");
+var southAfricaGallery = document.getElementById("south-africa-photo-gallery");
+var chinaGallery = document.getElementById("china-photo-gallery");
+var aboutArea = document.getElementById("about-area");
+var travelHeading = document.getElementById("travel-heading");
+var musicHeading = document.getElementById("music-heading");
 
   $(window).scroll(function() {
     var top_of_element = $("#about-container").offset().top;
@@ -73,7 +77,12 @@ var aboutMeChartArea = document.getElementById("about-me-chart-area")
     var bottom_of_screen = $(window).scrollTop() + $(window).innerHeight();
     var top_of_screen = $(window).scrollTop();
       if ((bottom_of_screen > top_of_element) && (top_of_screen < bottom_of_element)){
+          aboutArea.style.display = "block";
           aboutHeading.style.display = "block";
+          southAfricaGallery.style.display = "block";
+          chinaGallery.style.display = "block";
+          travelHeading.style.display = "block";
+          musicHeading.style.display = "block";
       }
 });
 
