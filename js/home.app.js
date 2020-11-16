@@ -1,17 +1,34 @@
 // -------------------------------------------------
+// FORCE LOAD AT TOP OF PAGE
+// ------------------------------------------------
+
+$(document).ready(function(){
+    $(this).scrollTop(0);
+});
+
+// -------------------------------------------------
 // NAVIGATION AREA
 // ------------------------------------------------
 
-var btnContainer = document.getElementById("navbarNavDropdown");
-var btns = btnContainer.getElementsByClassName("nav-link");
+// MAUAL CONTROLS FOR ACTIVE STATUS ON NAVIGATION
 
-for (var i = 0; i < btns.length; i++) {
-  btns[i].addEventListener("click", function() {
-    var current = document.getElementsByClassName("active");
-    current[0].className = current[0].className.replace(" active", "");
-    this.className += " active";
-  });
-}
+// var btnContainer = document.getElementById("navbarNavDropdown");
+// var btns = btnContainer.getElementsByClassName("nav-link");
+//
+// for (var i = 0; i < btns.length; i++) {
+//   btns[i].addEventListener("click", function() {
+//     var current = document.getElementsByClassName("active");
+//     current[0].className = current[0].className.replace("active", "");
+//     this.className += " active";
+//   });
+// }
+
+// -------------------------------------------------
+// SCROLLSPY
+// ------------------------------------------------
+
+$('body').scrollspy({ target: '#nav-top' })
+
 
 // -------------------------------------------------
 // FUNCITONS FOR MAIN TO LOAD AFTER .5 SECONDS

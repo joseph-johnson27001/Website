@@ -8,6 +8,7 @@ html {
 
 body {
   font-family: 'Rubik', sans-serif;
+  position: relative;
 }
 
 /* ------------------------------- */
@@ -151,6 +152,8 @@ nav a {
   margin-bottom: 2rem;
 }
 
+
+
 /* Body */
 
 
@@ -267,11 +270,6 @@ h6 {
   transition: .5s;
 }
 
-/* #china-photo-gallery,
-#south-africa-photo-gallery {
-  display: none;
-} */
-
 #china-photo-gallery {
   transform: translateX(200%);
   transition: 1.5s ease-out;
@@ -280,8 +278,17 @@ h6 {
 #south-africa-photo-gallery {
     transform: translateX(-200%);
     transition: 1.5s ease-out;
+}
+
+@media (max-width: 375px) {
+  #china-photo-gallery,
+  #south-africa-photo-gallery {
+    transform: translateX(0%);
+    transition: 0s;
+  }
 
 }
+
 /* MODAL AREA */
 
 .modal {
@@ -509,4 +516,5 @@ CLASS ANIMATIONS
 .svg {
   display: inline-block;
   float: left;
+  margin-right: -2.5rem;
 }
