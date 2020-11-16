@@ -79,10 +79,18 @@ var musicHeading = document.getElementById("music-heading");
       if ((bottom_of_screen > top_of_element) && (top_of_screen < bottom_of_element)){
           aboutArea.style.display = "block";
           aboutHeading.style.display = "block";
-          southAfricaGallery.style.display = "block";
-          chinaGallery.style.display = "block";
           travelHeading.style.display = "block";
           musicHeading.style.display = "block";
+          setTimeout(
+               function loadGalleries(){
+                southAfricaGallery.style.transform = "translateX(0%)";
+                chinaGallery.style.transform = "translateX(0%)";
+
+                 //
+                 // southAfricaGallery.style.display = "block";
+                 // chinaGallery.style.display = "block";
+               }, 500
+         );
       }
 });
 
