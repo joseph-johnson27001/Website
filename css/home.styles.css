@@ -101,6 +101,8 @@ nav a {
   color: gold;
 }
 
+
+
 .nav-link {
   padding: 0px;
 }
@@ -109,6 +111,12 @@ nav a {
   padding: 0px;
 }
 
+@media (max-width: 575px) {
+  #contact-button,
+  #github-logo {
+    margin: 0px 1rem;
+  }
+}
 
 
 /* ------------------------------- */

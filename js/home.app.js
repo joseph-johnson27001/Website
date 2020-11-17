@@ -117,51 +117,51 @@ var contactHeading = document.getElementById("contact-heading");
 
 // Variables for contact form
 
-const messageButton = document.getElementById("message-button");
-const sentNotificationButton = document.getElementById("sent-button");
-const failedNotificationButton = document.getElementById("failed-button");
-const sentMessage = document.getElementById("sent-message");
-const failedMessage = document.getElementById("failed-message");
-
-let firstNameMessage = document.getElementById("first-name-message");
-let secondNameMessage = document.getElementById("second-name-message");
-let emailMessage = document.getElementById("email-message");
-let messageMessage = document.getElementById("message-message");
-
-
-// Event listener for contact form send button
-
-messageButton.addEventListener("click", () => {
-    sentMessage.style.display = "none";
-    failedMessage.style.display = "none";
-      if (firstNameMessage.value == "" || secondNameMessage.value == "" || emailMessage.value == "" || messageMessage.value == "") {
-        failedMessageSend();
-      }
-      else {
-        sendMessage();
-      }
-});
-
-// Event listener to close sent message notification
-
-sentNotificationButton.addEventListener("click", () =>  {
-  sentMessage.style.display = "none";
-});
-
-// Event listener to close failed message notificaiton
-
-failedNotificationButton.addEventListener("click", () =>  {
-  failedMessage.style.display = "none";
-});
-
-// Send message functiom
-
-function sendMessage() {
-  sentMessage.style.display = "block";
-}
-
-// Failed message function
-
-function failedMessageSend() {
-  failedMessage.style.display = "block";
-}
+// const messageButton = document.getElementById("message-button");
+// const sentNotificationButton = document.getElementById("sent-button");
+// const failedNotificationButton = document.getElementById("failed-button");
+// const sentMessage = document.getElementById("sent-message");
+// const failedMessage = document.getElementById("failed-message");
+//
+// let firstNameMessage = document.getElementById("first-name-message");
+// let secondNameMessage = document.getElementById("second-name-message");
+// let emailMessage = document.getElementById("email-message");
+// let messageMessage = document.getElementById("message-message");
+//
+//
+// // Event listener for contact form send button
+//
+// messageButton.addEventListener("click", () => {
+//     sentMessage.style.display = "none";
+//     failedMessage.style.display = "none";
+//       if (firstNameMessage.value == "" || secondNameMessage.value == "" || emailMessage.value == "" || messageMessage.value == "") {
+//         failedMessageSend();
+//       }
+//       else {
+//         sendMessage();
+//       }
+// });
+//
+// // Event listener to close sent message notification
+//
+// sentNotificationButton.addEventListener("click", () =>  {
+//   sentMessage.style.display = "none";
+// });
+//
+// // Event listener to close failed message notificaiton
+//
+// failedNotificationButton.addEventListener("click", () =>  {
+//   failedMessage.style.display = "none";
+// });
+//
+// // Send message functiom
+//
+// function sendMessage() {
+//   sentMessage.style.display = "block";
+// }
+//
+// // Failed message function
+//
+// function failedMessageSend() {
+//   failedMessage.style.display = "block";
+// }
