@@ -65,20 +65,6 @@ var projectCardThree = document.getElementById("project-card-three");
         }
   });
 
-// Function for contact headings to appear on scroll
-
-var contactHeading = document.getElementById("contact-heading");
-
-  $(window).scroll(function() {
-      var top_of_element = $("#contact-form").offset().top;
-      var bottom_of_element = $("#contact-form").offset().top + $("#contact-form").outerHeight();
-      var bottom_of_screen = $(window).scrollTop() + $(window).innerHeight();
-      var top_of_screen = $(window).scrollTop();
-        if ((bottom_of_screen > top_of_element) && (top_of_screen < bottom_of_element)){
-            contactHeading.style.display = "block";
-        }
-  });
-
 // Function for about items to appear on scroll
 
 var aboutHeading = document.getElementById("about-container");
@@ -110,6 +96,20 @@ var musicHeading = document.getElementById("music-heading");
          );
       }
 });
+
+// Function for contact headings to appear on scroll
+
+var contactHeading = document.getElementById("contact-heading");
+
+  $(window).scroll(function() {
+      var top_of_element = $("#contact-form").offset().top;
+      var bottom_of_element = $("#contact-form").offset().top + $("#contact-form").outerHeight();
+      var bottom_of_screen = $(window).scrollTop() + $(window).innerHeight();
+      var top_of_screen = $(window).scrollTop();
+        if ((bottom_of_screen > top_of_element) && (top_of_screen < bottom_of_element)){
+            contactHeading.style.display = "block";
+        }
+  });
 
 // -------------------------------------------------
 // CONTACT FORM AREA

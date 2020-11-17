@@ -74,12 +74,42 @@ nav a {
 #navbarNavDropdown {
   width: 100vw;
 }
-/* Bottom Navigation */
+/* BOTTOM NAVIGATION*/
 
 #nav-bottom {
   opacity: 0;
-  max-height: 53px;
+  height: 45px;
 }
+
+#contact-button {
+  color: white;
+  cursor: pointer;
+  margin-bottom: 0px;
+  padding: 0px;
+  font-weight: 100;
+}
+
+#contact-button:hover {
+  color: gold;
+}
+
+#contact-button a {
+  text-decoration: none;
+}
+
+#contact-button a:hover {
+  color: gold;
+}
+
+.nav-link {
+  padding: 0px;
+}
+
+#github-logo {
+  padding: 0px;
+}
+
+
 
 /* ------------------------------- */
 /* MAIN */
@@ -263,6 +293,7 @@ h6 {
 
 #photo-gallery-container img {
   box-shadow: 5px 10px 8px 5px #888888;
+  max-height: 300px;
 }
 
 #photo-gallery-container img:hover {
@@ -343,7 +374,7 @@ h6 {
 /* CONTACT AREA */
 /* ------------------------------- */
 
-#contact-heading {
+/* #contact-heading {
   display: none;
 }
 
@@ -358,7 +389,8 @@ h6 {
 
 #failed-message {
   display: none;
-}
+} */
+
 /* ------------------------------- */
 /* KEY FRAMES & ANIMATIONS */
 /* ------------------------------- */
