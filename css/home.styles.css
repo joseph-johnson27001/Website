@@ -27,6 +27,27 @@ nav {
   max-width: 1200px;
 }
 
+@media (max-width: 845px) {
+  #nav-top {
+    padding: 0px;
+  }
+  #navigation-container {
+    padding: 0px;
+  }
+  #navbar-icon {
+    margin-left: 10px;
+  }
+  .navbar-toggler {
+    margin-right: 10px;
+  }
+  .navbar-nav {
+    border-bottom: 1px solid skyblue;
+  }
+  .navbar-nav li {
+    margin-left: 10px;
+  }
+}
+
 .navbar {
   font-family: 'Rubik', sans-serif;
   background-color: black;
