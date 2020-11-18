@@ -256,7 +256,7 @@ nav a {
   background-color: black;
 }
 
-@media (max-width: 768px ) {
+@media (max-width: 767px ) {
   .jumbotron-left {
     background-image: url("../images/R2D2capture2.JPG");
     background-size: auto;
