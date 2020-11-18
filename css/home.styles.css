@@ -110,16 +110,13 @@ nav a {
   font-weight: 100;
 }
 
-#contact-button:hover {
-  color: gold;
-}
 
 #contact-button a {
   text-decoration: none;
 }
 
 #contact-button a:hover {
-  color: gold;
+  color: skyblue;
 }
 
 
@@ -229,7 +226,7 @@ nav a {
   padding-bottom: 2rem;
 }
 
-.main {
+.main-content {
   padding: 1rem;
   padding-bottom: 0px;
   max-width: 1200px;

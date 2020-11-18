@@ -36,7 +36,7 @@ $('body').scrollspy({ target: '#nav-top' })
 
  setTimeout(
       function loadFunction(){
-          document.getElementsByClassName("main")[0].style.display = "block";
+          document.getElementsByClassName("main-content")[0].style.display = "block";
           document.getElementById("nav-bottom").style.opacity = "1";
       }, 780
 );
