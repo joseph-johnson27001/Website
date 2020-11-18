@@ -23,6 +23,12 @@ nav {
   border-bottom: 1px solid skyblue;
 }
 
+@media (max-width: 767px) {
+.navbar-nav  {
+    border-bottom: 1px solid skyblue;
+  }
+}
+
 #navigation-container {
   max-width: 1200px;
 }
@@ -39,9 +45,6 @@ nav {
   }
   .navbar-toggler {
     margin-right: 10px;
-  }
-  .navbar-nav {
-    border-bottom: 1px solid skyblue;
   }
   .navbar-nav li {
     margin-left: 10px;
@@ -575,4 +578,23 @@ CLASS ANIMATIONS
   display: inline-block;
   float: left;
   margin-right: -2.5rem;
+}
+
+/* ------------------------------- */
+/* MEDIA QUERY FOR MOBILE DEVICES (TO REMOVE ANIMATIONS ON SCROLL) */
+/* ------------------------------- */
+
+/* CHANGE BELOW TO ONE CLASS AND GIVE CLASS TO ALL AREAS */
+
+@media (max-width: 375px) {
+  .main-content,
+  #about-area,
+  #travel-heading,
+  #music-heading,
+  #projects-heading,
+  #project-card-one,
+  #project-card-two,
+  #project-card-three {
+    display: block;
+  }
 }
