@@ -332,21 +332,22 @@ h6 {
 
 #china-photo-gallery {
   transform: translateX(200%);
-  transition: 1.5s ease-out;
+  transition: 1s ease-out;
+  transition-delay: .2s;
 }
 
 #south-africa-photo-gallery {
     transform: translateX(-200%);
-    transition: 1.5s ease-out;
+    transition: 1s ease-out;
+    transition-delay: .2s;
 }
 
-@media (max-width: 375px) {
+@media (max-width: 1024px) {
   #china-photo-gallery,
   #south-africa-photo-gallery {
-    transform: translateX(0%);
+    transform: translateX(0px);
     transition: 0s;
   }
-
 }
 
 /* MODAL AREA */
