@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;1,300;1,400&display=swap" rel="stylesheet">
+    <script defer src="js/script.js"></script>
+
+    <title>Quiz App</title>
+  </head>
+  <body>
+    <div class="container">
+      <h2 id="quiz-heading">Quiz App</h2>
+      <div id="topic-container">
+        <h3>Select Your Topics:</h3>
+          <div class="btn-grid">
+            <button class="btn btn-topic" id="history-button">History</button>
+            <button class="btn btn-topic" id="sport-button">Sport</button>
+            <button class="btn btn-topic" id="food-and-drink-button">Food & Drink</button>
+            <button class="btn btn-topic" id="movies-and-television-button">Movies & Television</button>
+            <button class="btn btn-topic" id="science-button">Science</button>
+            <button class="btn btn-topic" id="geography-button">Geography</button>
+            <button class="btn btn-topic" id="music-button">Music</button>
+            <button class="btn btn-topic" id="general-knowledge-button">General Knowledge</button>
+          </div>
+      </div>
+
+      <div id="result-container" class="hide">
+        <h3>You scored <h2 id="result-score-count"></h2> out of <h2 id="result-question-count"></h2> </h3>
+      </div>
+      <div id="question-container" class="hide">
+        <div id="question">Question</div>
+        <div id="answer-buttons" class="btn-grid">
+          <button class="btn">Answer 1</button>
+          <button class="btn">Answer 2</button>
+          <button class="btn">Answer 3</button>
+          <button class="btn">Answer 4</button>
+        </div>
+      </div>
+      <div class="controls">
+        <button id="start-btn" class="start-btn btn">Start</button>
+        <button id="next-btn" class="next-btn btn hide">Next</button>
+        <button id="play-again-btn" class="next-btn btn hide">Play Again?</button>
+      </div>
+      <div class="hide" id="correct-answers-container">
+        <p>Score: <h3 id="score-count"></h3> Question: <h3 id="question-count"></h3></p>
+      </div>
+    </div>
+  </body>
+</html>
