@@ -405,9 +405,7 @@ h6 {
 }
 
 #projects-heading,
-#project-card-one,
-#project-card-two,
-#project-card-three {
+#contact-heading {
   display: none;
 }
 
