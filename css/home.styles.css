@@ -419,22 +419,16 @@ h6 {
 /* CONTACT AREA */
 /* ------------------------------- */
 
-/* #contact-heading {
-  display: none;
+
+
+.contact-input {
+  margin-bottom: 1rem;
 }
 
-.alert {
-  margin-top: 2rem;
-  clear: both;
+#contact-message-input {
+  height: 8rem;
 }
 
-#sent-message {
-  display: none;
-}
-
-#failed-message {
-  display: none;
-} */
 
 /* ------------------------------- */
 /* KEY FRAMES & ANIMATIONS */

@@ -67,35 +67,33 @@ var projectCardThree = document.getElementById("project-card-three");
 
 // Function for about items to appear on scroll
 
-var aboutHeading = document.getElementById("about-container");
-var southAfricaGallery = document.getElementById("south-africa-photo-gallery");
-var chinaGallery = document.getElementById("china-photo-gallery");
-var aboutArea = document.getElementById("about-area");
-var travelHeading = document.getElementById("travel-heading");
-var musicHeading = document.getElementById("music-heading");
-
-  $(window).scroll(function() {
-    var top_of_element = $("#about-container").offset().top;
-    var bottom_of_element = $("#about-container").offset().top + $("#about-container").outerHeight();
-    var bottom_of_screen = $(window).scrollTop() + $(window).innerHeight();
-    var top_of_screen = $(window).scrollTop();
-      if ((bottom_of_screen > top_of_element) && (top_of_screen < bottom_of_element)){
-          aboutArea.style.display = "block";
-          aboutHeading.style.display = "block";
-          travelHeading.style.display = "block";
-          musicHeading.style.display = "block";
-          setTimeout(
-               function loadGalleries(){
-                southAfricaGallery.style.transform = "translateX(0%)";
-                chinaGallery.style.transform = "translateX(0%)";
-
-                 //
-                 // southAfricaGallery.style.display = "block";
-                 // chinaGallery.style.display = "block";
-               }, 500
-         );
-      }
-});
+// var aboutHeading = document.getElementById("about-container");
+// var southAfricaGallery = document.getElementById("south-africa-photo-gallery");
+// var chinaGallery = document.getElementById("china-photo-gallery");
+// var aboutArea = document.getElementById("about-area");
+// var travelHeading = document.getElementById("travel-heading");
+// var musicHeading = document.getElementById("music-heading");
+//
+//   $(window).scroll(function() {
+//     var top_of_element = $("#about-container").offset().top;
+//     var bottom_of_element = $("#about-container").offset().top + $("#about-container").outerHeight();
+//     var bottom_of_screen = $(window).scrollTop() + $(window).innerHeight();
+//     var top_of_screen = $(window).scrollTop();
+//       if ((bottom_of_screen > top_of_element) && (top_of_screen < bottom_of_element)){
+//           aboutArea.style.display = "block";
+//           aboutHeading.style.display = "block";
+//           travelHeading.style.display = "block";
+//           musicHeading.style.display = "block";
+//           setTimeout(
+//                function loadGalleries(){
+//                 southAfricaGallery.style.transform = "translateX(0%)";
+//                 chinaGallery.style.transform = "translateX(0%)";
+//
+//
+//                }, 500
+//          );
+//       }
+// });
 
 // Function for contact headings to appear on scroll
 
