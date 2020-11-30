@@ -304,93 +304,6 @@ nav a {
 }
 
 /* ------------------------------- */
-/* ABOUT SECTION */
-/* ------------------------------- */
-
-
-#about-row {
-  height: 100%;
-}
-
-#about-area {
-  display: none;
-}
-
-h5 {
-  text-align: center;
-}
-
-h6 {
-  font-style: italic;
-}
-
-#about-container h4 {
-  color: black;
-  font-weight: 400;
-}
-
-/* PHOTO GALLERIES */
-
-#photo-gallery-container img {
-  box-shadow: 5px 10px 8px 5px #888888;
-  max-height: 300px;
-}
-
-#photo-gallery-container img:hover {
-  opacity: 0.6;
-  transition: .5s;
-}
-
-#china-photo-gallery {
-  transform: translateX(200%);
-  transition: 1s ease-out;
-  transition-delay: .2s;
-}
-
-#south-africa-photo-gallery {
-    transform: translateX(-200%);
-    transition: 1s ease-out;
-    transition-delay: .2s;
-}
-
-@media (max-width: 1024px) {
-  #china-photo-gallery,
-  #south-africa-photo-gallery {
-    transform: translateX(0px);
-    transition: 0s;
-  }
-}
-
-/* MODAL AREA */
-
-.modal {
-  background-color: black;
-}
-
-.modal-dialog {
-  width: 100%;
-}
-
-.carousel img {
-  max-height: 100vh;
-  overflow-y: hidden;
-}
-
-.modal img {
-  max-height:750px;
-  width: auto;
-  max-width: 800px;
-}
-
-
-/* MIXCLOUD MUSIC AREA */
-
-#travel-heading,
-#music-heading {
-  display: none;
-}
-
-/* ------------------------------- */
 /* PORTFOLIO */
 /* ------------------------------- */
 
@@ -411,6 +324,11 @@ h6 {
 
 .card ul {
   margin-top: auto;
+}
+
+.card-body h5 {
+  text-align: center;
+  font-weight: bold;
 }
 
 /* ------------------------------- */
