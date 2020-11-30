@@ -3,7 +3,6 @@
 /* ------------------------------- */
 html {
   scroll-behavior: smooth;
-  overflow-x: hidden;
 }
 
 * {
@@ -344,7 +343,7 @@ nav a {
 }
 
 #contact-message-input {
-  height: 8rem;
+  height: 15rem;
 }
 
 
