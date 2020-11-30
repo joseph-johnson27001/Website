@@ -385,6 +385,10 @@ h6 {
 
 /* Buttons */
 
+.projects-button-container {
+  text-align: center;
+}
+
 .button-width {
   width: 80%;
 }
