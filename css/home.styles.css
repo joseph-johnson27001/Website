@@ -419,8 +419,10 @@ h6 {
 
 
 
-.contact-input {
+#contact-form-row .contact-input {
   margin-bottom: 1rem;
+  padding-left: 0px;
+  padding-right: 0px;
 }
 
 #contact-message-input {
