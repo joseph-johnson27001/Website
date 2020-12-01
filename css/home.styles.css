@@ -107,23 +107,6 @@ nav a {
   height: 45px;
 }
 
-#contact-button {
-  color: white;
-  cursor: pointer;
-  margin-bottom: 0px;
-  padding: 0px;
-  font-weight: 100;
-}
-
-
-#contact-button a {
-  text-decoration: none;
-}
-
-#contact-button a:hover {
-  color: skyblue;
-}
-
 .nav-link {
   padding: 0px;
 }
