@@ -1,0 +1,332 @@
+* {
+  font-family: 'Roboto', sans-serif;
+}
+
+html {
+  background-color: #1B1818;
+}
+
+body {
+  background-color: #1B1813;
+  padding: 20px 20px 0px 0px;
+  color: white;
+  margin: 50px auto 0px auto;
+  width: 95%;
+  max-width: 95%;
+  height: 95%;
+  border: 10px solid black;
+  border-radius: 5px;
+  box shadow: 10px 10px 10px black;
+}
+
+/* ================================================================================
+NAVIGATION
+================================================================================ */
+nav  {
+  font-family: 'Roboto';
+  width: 100%;
+  max-width: 1300px;
+  margin: auto;
+}
+
+.navbar-nav {
+  margin-top: 1px
+}
+
+.custom-toggler.navbar-toggler {
+   border-color: #f7f7f7;
+}
+
+.custom-toggler .navbar-toggler-icon {
+   background-image: url(
+  "data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(221,39,54)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+#nav-death-star-icon {
+  height: 100px;
+  margin-top: 1rem;
+  filter: invert(100%);
+}
+
+nav ul {
+  margin-top: -3rem;
+}
+
+nav ul li {
+  padding: 0px 10px;
+}
+
+nav ul li a {
+  display: block;
+  color: white;
+  font-size: 17px;
+  text-align: left;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  color: #DD2736;
+}
+
+.active {
+  color: #DD2736;
+}
+
+/* ================================================================================
+EMAIL SIDE BAR
+================================================================================ */
+
+#email-sidebar-container {
+  position: absolute;
+  left: -110px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%) rotate(270deg);
+}
+
+#email-sidebar {
+  display: block;
+  text-align: center;
+  padding: 16px;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 18px;
+  margin-left: 7px;
+}
+
+
+/* ================================================================================
+SOCIAL MEDIA ICON BAR
+================================================================================ */
+
+.icon-bar {
+  z-index: 1000;
+  position: absolute;
+  right: -1%;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.icon-bar a {
+  display: block;
+  text-align: center;
+  padding: 16px;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 20px;
+}
+
+.icon-bar a:hover {
+  background-color: #000;
+}
+
+/* ================================================================================
+MAIN
+================================================================================ */
+
+main {
+  position: relative;
+  width: 100%;
+  padding-top: 4rem;
+  margin: auto;
+}
+
+#main-content-container {
+  padding-left: 4rem;
+  margin: auto;
+  max-width: 1400px;
+  padding-bottom: 150px;
+  width: 80%;
+}
+
+#intro-image-container {
+  display: flex;
+}
+
+h1 {
+  font-size: 5rem;
+}
+
+h1, h3 {
+    font-family: 'Philosopher', sans-serif;
+    margin: 15px 0px;
+}
+
+h3 {
+  color: #DD2736;
+  font-size: 1.5rem;
+}
+
+p {
+  font-size: 1.2rem;
+}
+
+i {
+  font-weight: 300;
+}
+
+#darth-vader-image {
+  padding-top: 1rem;
+  margin: auto;
+  height: auto;
+  width: 100%;
+  mix-blend-mode: lighten;
+}
+
+.form-buttons {
+  color: white;
+  border: 1px solid #DD2736;
+  background-color: transparent;
+  margin-top: 20px;
+  padding: 15px;
+  font-size: 1rem;
+  font-weight: 300;
+  border-top-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  transition: .4s;
+  cursor: pointer;
+}
+
+.form-buttons:hover {
+  background-color: #DD2736;
+}
+
+.form-buttons:focus {
+    outline: none;
+}
+
+.hide {
+  display: none;
+}
+/* BOTTOM LEFT INFORMATION */
+/* =========================================================================== */
+
+#bottom-left-container {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  display: flex;
+}
+
+.bottom-left-boxes {
+  display: inline;
+  width: 140px;
+  padding-top: 5px;
+}
+
+.bottom-left-boxes h7 {
+  font-size: 12px;
+  font-weight: bold;
+  color: #DF857C;
+  text-align: left;
+}
+
+.bottom-left-boxes p {
+  margin-top: 5px;
+  text-align: center;#
+}
+
+#bottom-left-box-one {
+  background-color: #120E0B;
+}
+
+#bottom-left-box-two {
+  background-color: #0E0D0B;
+}
+
+#bottom-left-box-three {
+  background-color: #0C0B09;
+}
+
+/* ================================================================================
+(MEDIA QUERIES)
+================================================================================ */
+
+@media(max-width: 767px) {
+
+  body {
+    margin-top: 20px;
+  }
+
+  nav {
+    width: 100%;
+    margin: 0;
+  }
+
+  #nav-death-star-icon {
+    height: 55px;
+  }
+
+  main {
+    margin-top: 0;
+    padding-top: 0;
+  }
+
+  p {
+    text-shadow: 2px 2px 4px black;
+    overflow-wrap: break-word;
+  }
+
+  #main-content-container  {
+    padding-left: 0;
+    padding-bottom: 0;
+  }
+
+  #intro-text-container {
+    padding: 1rem;
+  }
+
+  #email-sidebar-container,
+  #bottom-left-container,
+  .icon-bar {
+    display: none;
+  }
+}
+
+@media(max-width: 991px) {
+
+  h1
+   {
+    font-size: 3rem;
+  }
+
+}
+
+@media(max-width: 1064px) {
+  #main-content-container  {
+    width: 100%;
+  }
+}
+
+/* ================================================================================
+KEY FRAMES
+================================================================================ */
+
+.fade-in {
+  animation: fadeIn ease .8s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+.fade-out {
+  animation: fadeOut ease .5s;
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity:1;
+  }
+  100% {
+    opacity:0;
+  }
+}
