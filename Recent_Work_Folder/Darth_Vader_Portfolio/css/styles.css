@@ -271,8 +271,9 @@ i {
   }
 
   #main-content-container  {
-    padding-left: 0;
+    margin-left: 0;
     padding-bottom: 0;
+    padding-left: 2px;
   }
 
   #intro-text-container {
