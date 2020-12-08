@@ -271,9 +271,9 @@ i {
   }
 
   #main-content-container  {
-    padding: 1rem;
-    padding-bottom: 0;
     padding-left: 2px;
+    padding-bottom: 0;
+    padding: 1rem;
   }
 
   #email-sidebar-container,
