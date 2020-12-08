@@ -271,13 +271,9 @@ i {
   }
 
   #main-content-container  {
-    margin-left: 0;
+    padding: 1rem;
     padding-bottom: 0;
     padding-left: 2px;
-  }
-
-  #intro-text-container {
-    padding: 1rem;
   }
 
   #email-sidebar-container,
