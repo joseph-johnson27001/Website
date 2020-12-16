@@ -1,0 +1,455 @@
+/* ================================================================================
+MAIN
+================================================================================ */
+* {
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  background-color: #F2F2F2;
+}
+
+main {
+  width: 90%;
+  max-width: 1200px;
+  margin: -80px auto 0px auto;
+  z-index: 1000;
+  box-shadow: 0px 0px 3px 1px #888888;
+  background-color: white;
+  border-top: 2px solid #F86430;
+  line-height: 1.8rem;
+  padding-bottom: 3px;
+}
+
+h3 {
+  font-family: 'Merienda', cursive;
+  font-weight: 400;
+  padding-top: 5px;
+  font-size: 1.5rem;
+  color: #0572A1;
+}
+
+@media(max-width: 576px) {
+  h3 {
+    text-align: center;
+    font-size: 2rem;
+  }
+}
+
+p {
+  color: darkslategrey;
+  font-size: 1rem;
+  font-weight: 400;
+  margin: 0;
+  padding-top: .5rem;
+}
+
+@media (max-width: 576px) {
+    .main-button-container {
+      width: 100%;
+    }
+    .main-button-container .btn {
+      width: 100%;
+    }
+}
+
+@media (max-width: 992px) {
+  .images {
+    margin-top: 2px;
+  }
+}
+
+.btn {
+  border: none;
+  margin: 1rem 0 1rem 0;
+  transition: .1s;
+}
+
+.btn-dark {
+  border: none;
+  background-color: #2A2F35;
+  box-shadow: 0px 0px 2px #2A2F35;
+  border-radius: 5px;
+  padding: .4rem 1rem;
+}
+
+.btn-dark:hover {
+  background-color: #E85D44;
+}
+
+.btn-light {
+  color: white;
+  border: none;
+  box-shadow: 0px 0px 2px #2A2F35;
+  background-color: #E85D44;
+  padding: .4rem 1rem;
+}
+
+.btn-light:hover {
+  color: white;
+  background-color: #2A2E31;
+  border: none;
+}
+
+#activities-buttons {
+  margin-top: 1rem;
+  text-align: right;
+}
+/* ================================================================================
+NAVIGATION
+================================================================================ */
+
+nav {
+  height: 3.5rem;
+  background-color: #262B30;
+  border-bottom: 1px solid #F86430;
+}
+
+nav .container {
+  width: 90%;
+  max-width: 1200px;
+}
+
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.custom-toggler.navbar-toggler {
+  border-color: white;
+}
+
+.navbar-nav {
+  margin: 0;
+}
+
+.navbar-brand {
+  font-family: 'Permanent Marker', cursive;
+  font-size: 1.4rem;
+  font-weight: 300;
+  color: white;
+}
+
+.fa-globe {
+  color: orange;
+}
+
+.fa-globe:hover {
+  color: orange;
+}
+
+
+.nav-item {
+  padding-left: 1.2rem;
+}
+
+.nav-link {
+  font-size: 1rem;
+  color: white;
+}
+
+.nav-link:hover {
+  color: orange;
+}
+
+.navbar-collapse {
+  background-color: #262B30;
+}
+
+@media(max-width: 767px) {
+  .navbar {
+    width: 100%;
+  }
+  .navbar-collapse {
+    border-left: 1px solid #F86430;
+    border-right: 1px solid #F86430;
+    border-bottom: 1px solid #F86430;
+  }
+
+  nav .navbar-inner {
+    width: 100%;
+  }
+}
+
+.active {
+  color: orange;
+}
+
+
+/* ================================================================================
+JUMBOTRON
+================================================================================ */
+
+.jumbotron {
+  background-image: url("../images/bokeh_background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 70% 45%;
+  text-align: center;
+  color: white;
+  height: 400px;
+  text-shadow: 0 0 5px maroon, 0 0 1px #2A2F35;
+  border-bottom: 1px solid #FF9D03;
+}
+
+.jumbotron h1 {
+  font-size: 4rem;
+  font-family: 'Permanent Marker', cursive;
+  text-shadow: 0 0 15px black;
+}
+
+.jumbotron h5 {
+  font-family: 'Permanent Marker', cursive;
+  font-weight: 300;
+  font-size: 1.4rem;
+  text-shadow: 0 0 15px black;
+  padding: .5rem 0;
+}
+
+.jumbotron hr {
+  width: 400px;
+  background-color: white;
+}
+
+@media (max-width: 415px) {
+  .jumbotron {
+    height: 350px;
+  }
+  .jumbotron h1 {
+      font-size: 2.3rem;
+  }
+  .jumbotron h5 {
+    font-size: 1.3rem;
+  }
+  .jumbotron hr {
+    width: 200px;
+  }
+}
+
+/* ================================================================================
+SERVICES CONTAINER
+================================================================================ */
+
+@media(max-width: 767px) {
+  #services-div {
+    margin-bottom: 20px;
+  }
+}
+.services-header {
+  display: inline;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.icons {
+  display: inline;
+}
+
+/* ================================================================================
+ACTIVITIES AREA
+================================================================================ */
+
+.activities-images {
+  width: 100%;
+  height: auto;
+  margin: auto;
+  margin-bottom: 5px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px black;
+  transition: .1s;
+}
+
+.activities-images:hover {
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+/* ================================================================================
+BLOG AND TESTIMONIAL AREA
+================================================================================ */
+
+.blog-images {
+  height: auto;
+  width: 100%;
+  border-radius: 5px;
+  box-shadow: 0 0 5px black;
+  margin-top: 5px;
+}
+
+.blog-headings {
+  font-weight: 400;
+  font-size: 1.3rem;
+}
+
+.blog-sub-text {
+  color: #F86430;
+  font-size: 1rem;
+  font-style: italic;
+}
+
+.blog-text {
+  color: darkslategrey;
+}
+
+@media(min-width: 992px) {
+  #blog-hr {
+    display: none;
+  }
+}
+
+.card {
+  border: none;
+  padding: 0;
+}
+
+.fa-quote-left,
+.fa-quote-right {
+  color: #333333;
+  background-color: white;
+  padding: 1rem;
+}
+
+.blockquote {
+  text-align: center;
+  margin: auto;
+}
+
+.blockquote-footer {
+  background-color: #F3F3F3;
+  width: 100%;
+  color: #5B5A5C;
+}
+
+
+/* ================================================================================
+SOCIAL MEDIA AND CONTACT AREA
+================================================================================ */
+
+.social-media-icon {
+  color: white;
+  background-color: #F86430;
+  padding: 10px 0px;
+  font-size: 20px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  transition: 0.2s;
+}
+
+.social-media-icon:hover {
+  color: white;
+  text-decoration: none;
+  opacity: 0.7;
+}
+
+#social-media-image-container {
+  padding-top: 10px;
+  padding-bottom: 5px;
+}
+
+.bottom-container-images {
+  height: 50px;
+  width: 50px;
+}
+
+
+/* ================================================================================
+BOTTOM CONTAINER
+================================================================================ */
+
+#bottom-container {
+  color: white;
+  background-color: #2A2F35;
+  border-top: 3px solid #F86430;
+  padding: 2rem 1rem 1rem 1rem;
+}
+
+#bottom-container p {
+  color: white;
+  font-weight: 300;
+}
+
+ #bottom-container hr {
+  height: 2px;
+  background-color: #53585B;
+}
+
+.twitter-italic-container {
+  color: #F86430;
+  text-align: right;
+}
+
+
+@media(max-width: 767px) {
+  #bottom-container h5 {
+    margin-top: 5px;
+  }
+}
+/* ================================================================================
+BACK TO TOP BUTTON
+================================================================================ */
+
+#back-to-top-container {
+  margin: 1rem 0;
+  text-align: center;
+}
+
+#back-to-top-button {
+  border-radius: 25%;
+}
+
+/* ================================================================================
+BOTTOM NAVIGATION
+================================================================================ */
+
+#bottom-navigation-container  ul {
+  list-style: none;
+}
+
+#bottom-navigation-container a {
+    color: #D7DBDE;
+    text-decoration: none;
+}
+
+#bottom-navigation-container a:hover {
+    color: #FF9D03;
+}
+
+#bottom-navigation-container {
+  text-align: right;
+}
+
+
+/* ================================================================================
+KEY FRAMES & ANIMATION CLASSES
+================================================================================ */
+
+.hide {
+  display: none;
+}
+
+.fade-in {
+  animation: fadeIn ease .8s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+.fade-out {
+  animation: fadeOut ease .5s;
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity:1;
+  }
+  100% {
+    opacity:0;
+  }
+}
