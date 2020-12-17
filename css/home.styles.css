@@ -111,11 +111,14 @@ nav a {
   padding: 0px;
 }
 
-#github-logo,
-#cv-icon,
-nav .nav-bottom-icon-container {
-  padding: 0px 0px 0px .5em;
+#github-logo {
+  padding: 0px 0px 0px 0px;
 }
+
+#github-logo:hover {
+  color: skyblue;
+}
+
 
 @media (max-width: 575px) {
   #contact-button,
