@@ -144,10 +144,11 @@ nav a {
 /* RECENT WORK AREA */
 
 .card-img {
-  height: 350px;
+  height: 320px;
   width: auto;
   margin: auto;
 }
+
 
 .recent-work-card {
   border: none;
@@ -199,8 +200,6 @@ nav a {
   font-weight: 400;
   margin-bottom: 2rem;
 }
-
-
 
 /* Body */
 
