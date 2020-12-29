@@ -149,6 +149,16 @@ nav a {
   margin: auto;
 }
 
+.modal-image-container {
+  text-align: center;
+}
+
+.modal-image {
+  height: 350px;
+  width: 350px;
+  margin: auto;
+}
+
 
 .recent-work-card {
   border: none;
