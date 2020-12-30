@@ -21,7 +21,7 @@ $('body').scrollspy({ target: '#nav-top' })
       function loadFunction(){
           document.getElementsByClassName("main-content")[0].style.display = "block";
           document.getElementById("nav-bottom").style.opacity = "1";
-      }, 780
+      }, 0
 );
 
 // -------------------------------------------------
