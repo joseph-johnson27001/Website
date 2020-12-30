@@ -144,9 +144,26 @@ nav a {
 /* RECENT WORK AREA */
 
 .card-img {
-  height: 320px;
+  height: 300px;
   width: auto;
   margin: auto;
+  margin-bottom: 5px;
+}
+
+@media (max-width: 575px) {
+
+  .card-img {
+    height: 250px;
+    width: 250px;
+  }
+}
+
+@media (max-width: 767px) {
+
+  .card-img {
+    height: 280px;
+  }
+
 }
 
 .modal-image-container {
@@ -155,8 +172,10 @@ nav a {
 
 .modal-image {
   padding-top: 5px;
-  height: 250px;
-  width: 250px;
+  height: 100%;
+  max-height: 300px;
+  width: 95%;
+  max-width: 300px;
   margin: auto;
 }
 
@@ -176,18 +195,8 @@ nav a {
   margin-bottom: 3px;
 }
 
-@media (min-width 768px max-width: 991px) {
-  #recent-work-container {
-    text-align: center;
-  }
 
-  #recent-work-container .card-img {
-    height: 500px;
-    width: 600px;
-  }
-}
-
-#recent-work-container .card:hover {
+#recent-work-container .card-img:hover {
   opacity: 0.6;
   transition: .5s linear;
 }
@@ -221,7 +230,6 @@ nav a {
 
 .card {
   height: 100%;
-  z-index: 1000;
 }
 
 .row {
