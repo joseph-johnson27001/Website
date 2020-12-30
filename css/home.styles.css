@@ -313,11 +313,6 @@ nav a {
   width: 80%;
 }
 
-#projects-heading,
-#contact-heading {
-  display: none;
-}
-
 .card ul {
   margin-top: auto;
 }
