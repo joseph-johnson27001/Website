@@ -32,7 +32,7 @@ nav {
 }
 
 #navigation-container {
-  max-width: 1200px;
+  max-width: 1177px;
 }
 
 @media (max-width: 845px) {
@@ -111,7 +111,7 @@ nav a {
 }
 
 #github-logo {
-  padding: 0px 0px 0px 0px;
+  padding: 0px;
 }
 
 #github-logo:hover {
