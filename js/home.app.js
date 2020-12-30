@@ -30,23 +30,23 @@ $('body').scrollspy({ target: '#nav-top' })
 
 // Funtion to make project cards appear on window scroll
 
-var projectsHeading = document.getElementById("projects-heading");
+// var projectsHeading = document.getElementById("projects-heading");
 // var projectCardOne = document.getElementById("project-card-one");
 // var projectCardTwo = document.getElementById("project-card-two");
 // var projectCardThree = document.getElementById("project-card-three");
 
-  $(window).scroll(function() {
-      var top_of_element = $("#projects-heading").offset().top;
-      var bottom_of_element = $("#projects-heading").offset().top + $("#projects-heading").outerHeight();
-      var bottom_of_screen = $(window).scrollTop() + $(window).innerHeight();
-      var top_of_screen = $(window).scrollTop();
-        if ((bottom_of_screen > top_of_element) && (top_of_screen < bottom_of_element)){
-            projectsHeading.style.display = "block";
+  // $(window).scroll(function() {
+  //     var top_of_element = $("#projects-heading").offset().top;
+  //     var bottom_of_element = $("#projects-heading").offset().top + $("#projects-heading").outerHeight();
+  //     var bottom_of_screen = $(window).scrollTop() + $(window).innerHeight();
+  //     var top_of_screen = $(window).scrollTop();
+  //       if ((bottom_of_screen > top_of_element) && (top_of_screen < bottom_of_element)){
+  //           projectsHeading.style.display = "block";
             // projectCardOne.style.display = "block";
             // projectCardTwo.style.display = "block";
             // projectCardThree.style.display = "block";
-        }
-  });
+  //       }
+  // });
 
 // Function for about items to appear on scroll
 
@@ -80,14 +80,14 @@ var projectsHeading = document.getElementById("projects-heading");
 
 // Function for contact headings to appear on scroll
 
-var contactHeading = document.getElementById("contact-heading");
-
-  $(window).scroll(function() {
-      var top_of_element = $("#contact-form-row").offset().top;
-      var bottom_of_element = $("#contact-form-row").offset().top + $("#contact-form-row").outerHeight();
-      var bottom_of_screen = $(window).scrollTop() + $(window).innerHeight();
-      var top_of_screen = $(window).scrollTop();
-        if ((bottom_of_screen > top_of_element) && (top_of_screen < bottom_of_element)){
-            contactHeading.style.display = "block";
-        }
-  });
+// var contactHeading = document.getElementById("contact-heading");
+//
+//   $(window).scroll(function() {
+//       var top_of_element = $("#contact-form-row").offset().top;
+//       var bottom_of_element = $("#contact-form-row").offset().top + $("#contact-form-row").outerHeight();
+//       var bottom_of_screen = $(window).scrollTop() + $(window).innerHeight();
+//       var top_of_screen = $(window).scrollTop();
+//         if ((bottom_of_screen > top_of_element) && (top_of_screen < bottom_of_element)){
+//             contactHeading.style.display = "block";
+//         }
+//   });
