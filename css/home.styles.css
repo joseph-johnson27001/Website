@@ -189,21 +189,8 @@ nav a {
   text-shadow: 0 0 5px black;
 }
 
-#recent-work-container .card {
-  border: none;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 3px;
-}
-
-
-#recent-work-container .card-img:hover {
-  opacity: 0.4;
-  transition: .5s linear;
-}
-
 #recent-work-container img {
-  box-shadow: 5px 10px 5px #aaaaaa;
+  box-shadow: 0px 0px 15px black;
 }
 
 .card-img-overlay {
@@ -212,7 +199,12 @@ nav a {
 
 .card-img-overlay:hover {
   opacity: 1;
-  transition: .5s linear;
+  transition: .4s linear;
+}
+
+.recent-work-item:hover {
+  transform: scale(1.02);
+  transition: .4s;
 }
 
 .container h2 {
