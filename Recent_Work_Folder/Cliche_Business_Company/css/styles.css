@@ -1,0 +1,262 @@
+
+/* ================================================================================
+GENERAL STYLES
+================================================================================ */
+
+* {
+  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+p {
+  font-size: 1rem;
+}
+
+h5 {
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+hr {
+  margin-left: 30px;
+  margin-right: 30px;
+  max-width: 1200px;
+}
+
+.container {
+  padding: 0;
+}
+
+.heading-container {
+  padding: 3rem 0 .5rem 0;
+}
+
+.heading-row {
+  background-color: #F8F8F8;
+  justify-content: center;
+}
+
+.heading-row h5 {
+  background-color: #FF6600;
+  color: white;
+  padding: .7rem;
+  font-weight: 300;
+}
+
+
+/* ================================================================================
+NAVIGATION
+================================================================================ */
+
+#navbarNav {
+  justify-content: flex-end;
+}
+
+.navbar {
+  background-color: #F8F8F8;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.navbar-toggler-icon {
+  margin: .2rem 0;
+}
+
+.nav-item {
+  padding: .6rem;
+  cursor: pointer;
+}
+
+.nav-item:hover  {
+  background-color: #FF6600;
+}
+
+.active {
+  background-color: #FF6600;
+}
+
+.navbar-light .navbar-nav .active>.nav-link {
+  color: white;
+}
+
+.navbar-brand {
+  color: black;
+  font-size: 1.6rem;
+}
+
+.fa-handshake {
+  color: #FF6600;
+}
+/* ================================================================================
+JUMBOTRON
+================================================================================ */
+
+.jumbotron {
+  background-image: url("../images/information-security.jpg");
+  background-size: cover;
+  background-position: 50% 50%;
+  height: 355px;
+  padding: 0;
+  text-transform: uppercase;
+  box-shadow: 0 0 10px black;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+#jumbotron-container {
+  padding: 4rem 1rem ;
+}
+
+.jumbotron h1 {
+  font-size: 3.5rem;
+  font-weight: 400;
+  color: white;
+  text-shadow: 0 0 5px black;
+}
+
+.lead {
+  font-weight: 100;
+  color: #FF7800;
+  font-size: 2.7rem;
+  margin-top: 1rem;
+  margin-bottom: 0;
+  text-shadow: 0 0 5px black;
+}
+
+.lead-2 {
+  font-weight: 500;
+  color: white;
+  font-size: 3rem;
+  text-shadow: 0 0 5px black;
+}
+
+
+@media (max-width: 535px) {
+
+  .jumbotron {
+    height: 450px;
+  }
+
+  .jumbotron h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    font-weight: 400;
+  }
+
+ .lead {
+      font-size: 1.8rem;
+  }
+
+ .lead-2 {
+    font-size: 2.5rem;
+    font-weight: 400;
+  }
+}
+
+@media(max-width: 767px) {
+
+  .jumbotron {
+    height: 380px;
+  }
+
+  #jumbotron-container {
+    padding: 2rem;
+  }
+
+}
+/* ================================================================================
+MAIN
+================================================================================ */
+
+main {
+  width: 85%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+#introductory-text {
+  text-align: center;
+}
+
+
+/* ================================================================================
+FIRST ROW SECTION
+================================================================================ */
+
+.orange {
+  color: #FE6B08;
+  font-weight: bold;
+}
+
+
+/* ================================================================================
+SECOND ROW SECTION
+================================================================================ */
+.card {
+  margin-bottom: 5px;
+}
+.card-body {
+  background-color: #F8F8F8;
+  text-align: center;
+}
+
+/* ================================================================================
+THIRD ROW SECTION
+================================================================================ */
+
+.third-row-section-image {
+  margin-top: 2px;
+}
+
+#third-row-section h5 {
+  margin-top: 5px;
+}
+
+/* ================================================================================
+FOURTH SECTION ROW
+================================================================================ */
+
+.social-media-name {
+  color: #FF6600;
+}
+
+#awards-title {
+  font-weight: 300;
+  font-size: 1.2rem;
+}
+
+/* ================================================================================
+SOCIAL MEDIA CONTAINER
+================================================================================ */
+
+#bottom-container {
+  color: white;
+  background-color: #303035;
+  padding: 1rem 2rem;
+  margin-top: 5px;
+}
+
+.social-container {
+  border-top: 1px solid #5B5754;
+}
+
+.social-container ul {
+  padding-left: 0;
+}
+
+.social-container li {
+  list-style: square;
+}
+
+.social-container li a {
+  color: white;
+}
+
+.social-container li a:hover {
+  color: #FF6600;
+  text-decoration: none;
+}
+
+#get-in-touch-container li {
+  list-style: none;
+}
