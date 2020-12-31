@@ -143,46 +143,7 @@ nav a {
 /* RECENT WORK AREA */
 
 .card-img {
-  height: 300px;
-  width: auto;
-  margin: auto;
   margin-bottom: 5px;
-}
-
-@media (max-width: 324px) {
-
-  .card-img {
-    height: 225px;
-    margin: auto;
-  }
-  .recent-work-image {
-    height: 225px;
-    width: 225px;
-    margin: auto;
-    margin-bottom: 5px;
-  }
-  .recent-work-item {
-    text-align: center;
-  }
-}
-  }
-}
-
-@media (max-width: 767px) {
-
-  .card-img {
-    height: 300px;
-    margin: auto;
-  }
-  .recent-work-image {
-    height: 300px;
-    width: 300px;
-    margin: auto;
-    margin-bottom: 5px;
-  }
-  .recent-work-item {
-    text-align: center;
-  }
 }
 
 .modal-image-container {
