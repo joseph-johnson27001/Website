@@ -149,20 +149,40 @@ nav a {
   margin-bottom: 5px;
 }
 
-@media (max-width: 575px) {
+@media (max-width: 324px) {
 
   .card-img {
-    height: 250px;
-    width: 250px;
+    height: 225px;
+    margin: auto;
+  }
+  .recent-work-image {
+    height: 225px;
+    width: 225px;
+    margin: auto;
+    margin-bottom: 5px;
+  }
+  .recent-work-item {
+    text-align: center;
+  }
+}
   }
 }
 
 @media (max-width: 767px) {
 
   .card-img {
-    height: 280px;
+    height: 300px;
+    margin: auto;
   }
-
+  .recent-work-image {
+    height: 300px;
+    width: 300px;
+    margin: auto;
+    margin-bottom: 5px;
+  }
+  .recent-work-item {
+    text-align: center;
+  }
 }
 
 .modal-image-container {
@@ -218,7 +238,7 @@ nav a {
   display: inline;
 }
 
-@media (max-width: 280px) {
+@media (max-width: 350px) {
   .container .svg {
     display: none;
   }
@@ -279,12 +299,18 @@ nav a {
   font-size: 1.5rem;
 }
 
-@media (max-width: 768px ) {
+@media (max-width: 767px ) {
   .jumbotron-left {
     background-image: url("../images/R2D2capture2.JPG");
     background-size: auto;
     background-repeat: no-repeat;
     background-position: top right;
+  }
+}
+
+@media (max-width: 375px ) {
+  .jumbotron-left {
+    background-position: top;
   }
 }
 
