@@ -214,6 +214,20 @@ nav a {
   margin-bottom: 2rem;
 }
 
+.projects-button-container .btn-primary {
+  display: inline;
+}
+
+@media (max-width: 280px) {
+  .container .svg {
+    display: none;
+  }
+  .projects-button-container .btn-primary {
+    display: block;
+    margin-bottom: 2px;
+  }
+}
+
 /* Body */
 
 
