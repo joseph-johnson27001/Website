@@ -419,7 +419,7 @@ nav a {
 /* BOUNCE ANIMATION FOR ICONS */
 
 
-@keyframes jump {
+/* @keyframes jump {
     0%   { transform: scale(1,1)      translateY(0); }
     10%  { transform: scale(1.1,.9)   translateY(0); }
     30%  { transform: scale(.9,1.1)   translateY(-50px); }
@@ -427,7 +427,7 @@ nav a {
     57%  { transform: scale(1,1)      translateY(-7px); }
     64%  { transform: scale(1,1)      translateY(0); }
     100% { transform: scale(1,1)      translateY(0); }
-}
+} */
 
 /* --------------------------------------------------
 CLASS ANIMATIONS
@@ -487,11 +487,11 @@ CLASS ANIMATIONS
 
 /* Bounce animation for icons */
 
-.bounce {
+/* .bounce {
     animation-name: jump;
     animation-timing-function: cubic-bezier(0.280, 0.840, 0.420, 1);
     animation-duration: 2s;
-}
+} */
 
 /* ------------------------------- */
 /* SVG STYLES */
