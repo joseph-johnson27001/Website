@@ -187,6 +187,10 @@ RECENT WORK
   transition: .4s linear;
 }
 
+.recent-work-item {
+  margin-bottom: 20px;
+}
+
 .recent-work-item:hover {
   transform: scale(1.02);
   transition: .4s;
