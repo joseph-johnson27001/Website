@@ -449,7 +449,7 @@ CLASS ANIMATIONS
   animation:slideInFromRight2 1s linear;
 }
 
-/* .slide-up-one {
+.slide-up-one {
   animation:slideInFromBottom 1.2s ease-out;
 }
 
@@ -463,7 +463,7 @@ CLASS ANIMATIONS
 
 .slide-up-four {
   animation:slideInFromBottom 1.8s ease-out;
-} */
+}
 
 .fade-in {
 	opacity: 1;
