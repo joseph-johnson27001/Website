@@ -113,18 +113,18 @@ BOTTOM NAVIGATION
   padding: 0px;
 }
 
-#github-logo {
-  padding: 0px;
+.footer-icon {
+  padding: 5px !important;
 }
 
-#github-logo:hover {
+.footer-icon:hover {
   color: skyblue;
 }
 
 
 @media (max-width: 575px) {
   #contact-button,
-  #github-logo {
+  .footer-icon {
     margin: 0px 1rem;
   }
 }
