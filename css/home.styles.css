@@ -129,6 +129,10 @@ BOTTOM NAVIGATION
   .footer-icon {
     margin: 0px 1rem;
   }
+  #nav-bottom-container {
+    width: 90%;
+    margin: auto;
+  }
 }
 
 
