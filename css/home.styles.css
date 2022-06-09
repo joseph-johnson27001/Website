@@ -467,10 +467,6 @@ CLASS ANIMATIONS
   animation:slideInFromBottom 1.6s ease-out;
 }
 
-.slide-up-four {
-  animation:slideInFromBottom 1.8s ease-out;
-}
-
 .fade-in {
 	opacity: 1;
 	animation-name: fadeInOpacity;
