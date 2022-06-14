@@ -488,7 +488,6 @@ SVG ICONS
 ------------------------------------------------------------------------------- */
 
 .svg {
-  display: inline-block;
   float: left;
   margin-right: -2.5rem;
 }
