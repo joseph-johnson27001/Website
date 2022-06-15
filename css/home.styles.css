@@ -443,17 +443,13 @@ CLASS ANIMATIONS
   animation:slideInFromLeft 1s linear;
 }
 
-.slide-left-2 {
-  animation:slideInFromLeft2 1s linear;
-}
-
 .slide-right {
   animation:slideInFromRight .5s linear;
 }
 
-.slide-right-2 {
+/* .slide-right-2 {
   animation:slideInFromRight2 1s linear;
-}
+} */
 
 .slide-up-one {
   animation:slideInFromBottom 1.2s ease-out;
