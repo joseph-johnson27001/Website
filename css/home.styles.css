@@ -254,9 +254,6 @@ BODY
   display: none;
 }
 
-
-/* Anchor tags for navigation bar offset */
-
 .anchor {
   display: block;
   position: relative;
