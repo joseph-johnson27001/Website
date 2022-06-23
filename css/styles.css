@@ -61,14 +61,12 @@ h3 {
   color: white;
   animation-duration: 1.5s;
   animation-delay: .5s;
-  /* margin-bottom: 1em; */
 }
 
 .fade3 {
   animation-duration: 1.5s;
   animation-delay: 1.5s;
 }
-
 
 #intro_button {
   color: white;
@@ -88,7 +86,6 @@ h3 {
 #intro_button:hover {
   transform: scale(1.1);
 }
-
 
 /* --------------------------
   SVG Styles
