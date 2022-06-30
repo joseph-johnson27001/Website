@@ -2,36 +2,38 @@
 VARIABLES
 ================================================================================ */
 // NAVIGATION
-const btnContainer = document.getElementById("navbarNav")
-const btns = btnContainer.getElementsByClassName("nav-link")
+const btnContainer = document.getElementById("navbarNav");
+const btns = btnContainer.getElementsByClassName("nav-link");
 
 // NAVIGATION BUTTONS
-const navHomeButton = document.getElementById("nav-home-button")
-const navAboutButton = document.getElementById("nav-about-button")
-const navServicesButton = document.getElementById("nav-services-button")
-const navPortfolioButton = document.getElementById("nav-portfolio-button")
-const navBlogButton = document.getElementById("nav-blog-button")
-const navContactButton = document.getElementById("nav-contact-button")
+const navHomeButton = document.getElementById("nav-home-button");
+const navAboutButton = document.getElementById("nav-about-button");
+const navServicesButton = document.getElementById("nav-services-button");
+const navPortfolioButton = document.getElementById("nav-portfolio-button");
+const navBlogButton = document.getElementById("nav-blog-button");
+const navContactButton = document.getElementById("nav-contact-button");
 
 // ON PAGE BUTTONS
-const aboutMeButton = document.getElementById("about-me-button")
-const servicesButton = document.getElementById("services-button")
-const portfolioButton = document.getElementById("portfolio-button")
-const blogButton = document.getElementById("blog-button")
-const contactButton = document.getElementById("contact-button")
-const homeButton = document.getElementById("home-button")
+const aboutMeButton = document.getElementById("about-me-button");
+const servicesButton = document.getElementById("services-button");
+const portfolioButton = document.getElementById("portfolio-button");
+const blogButton = document.getElementById("blog-button");
+const contactButton = document.getElementById("contact-button");
+const homeButton = document.getElementById("home-button");
 
 // CONTAINERS
-const informationContentContainer = document.getElementById("information-content-container")
-const introTextContainer = document.getElementById("intro-text-container")
-const aboutMeContainer = document.getElementById("about-me-container")
-const servicesContainer = document.getElementById("services-container")
-const portfolioContainer = document.getElementById("portfolio-container")
-const blogContainer = document.getElementById("blog-container")
-const contactContainer = document.getElementById("contact-container")
+const informationContentContainer = document.getElementById(
+  "information-content-container"
+);
+const introTextContainer = document.getElementById("intro-text-container");
+const aboutMeContainer = document.getElementById("about-me-container");
+const servicesContainer = document.getElementById("services-container");
+const portfolioContainer = document.getElementById("portfolio-container");
+const blogContainer = document.getElementById("blog-container");
+const contactContainer = document.getElementById("contact-container");
 
 // ARRAYS
-const allContentContainers = informationContentContainer.children
+const allContentContainers = informationContentContainer.children;
 
 /* ================================================================================
 EVENT LISTENERS
@@ -42,7 +44,7 @@ EVENT LISTENERS
 navHomeButton.addEventListener("click", () => {
   hideCurrentSection();
   setTimeout(showIntroSection, 400);
-})
+});
 
 navAboutButton.addEventListener("click", () => {
   hideCurrentSection();
@@ -69,56 +71,56 @@ navContactButton.addEventListener("click", () => {
   setTimeout(showContactSection, 400);
 });
 
-
-
+// =============================================================================
 // MAIN CONTENT BUTTON EVENT LISTENERS
 // =============================================================================
 aboutMeButton.addEventListener("click", () => {
-    removeAndHide()
-    navAboutButton.classList.add("active");
-    setTimeout(showAboutSection, 400);
+  removeAndHide();
+  navAboutButton.classList.add("active");
+  setTimeout(showAboutSection, 400);
 });
 
 servicesButton.addEventListener("click", () => {
-  removeAndHide()
+  removeAndHide();
   navServicesButton.classList.add("active");
   setTimeout(showServicesSection, 400);
 });
 
 portfolioButton.addEventListener("click", () => {
-  removeAndHide()
+  removeAndHide();
   navPortfolioButton.classList.add("active");
-  setTimeout(showPortfolioSection, 400)
+  setTimeout(showPortfolioSection, 400);
 });
 
 blogButton.addEventListener("click", () => {
-  removeAndHide()
+  removeAndHide();
   navBlogButton.classList.add("active");
-  setTimeout(showBlogSection, 400)
+  setTimeout(showBlogSection, 400);
 });
 
 contactButton.addEventListener("click", () => {
-  removeAndHide()
+  removeAndHide();
   navContactButton.classList.add("active");
-  setTimeout(showContactSection, 400)
+  setTimeout(showContactSection, 400);
 });
 
 homeButton.addEventListener("click", () => {
-  removeAndHide()
+  removeAndHide();
   navHomeButton.classList.add("active");
-  setTimeout(showIntroSection, 400)
+  setTimeout(showIntroSection, 400);
 });
 
 /* =============================================================================
 FUNCTIONS
 ================================================================================ */
 
+// =============================================================================
 // NAVIGATION FUNCTIONS
 // =============================================================================
 
 // Function to give targeted button active status
 for (var i = 0; i < btns.length; i++) {
-  btns[i].addEventListener("click", function() {
+  btns[i].addEventListener("click", function () {
     removeActiveNavClass();
     this.className += " active";
   });
@@ -132,6 +134,7 @@ function removeActiveNavClass() {
   }
 }
 
+// =============================================================================
 // MAIN CONTENT FUNCTIONS
 // =============================================================================
 
@@ -139,10 +142,10 @@ function removeActiveNavClass() {
 
 function hideCurrentSection() {
   for (let i = 0; i < allContentContainers.length; i++) {
-      allContentContainers[i].classList.add("fade-out")
-      setTimeout(function(){
-      allContentContainers[i].classList.add("hide")
-    }, 400)
+    allContentContainers[i].classList.add("fade-out");
+    setTimeout(function () {
+      allContentContainers[i].classList.add("hide");
+    }, 400);
   }
 }
 
@@ -150,7 +153,7 @@ function hideCurrentSection() {
 
 function showIntroSection() {
   introTextContainer.classList.remove("hide", "fade-out");
-  introTextContainer.classList.add("fade-in")
+  introTextContainer.classList.add("fade-in");
 }
 
 // Function to show about section div
@@ -187,10 +190,9 @@ function showContactSection() {
   contactContainer.classList.add("fade-in");
 }
 
-
 // Combined function to remove active class on nav and to hide current section on PAGE
 
 function removeAndHide() {
   removeActiveNavClass();
-  hideCurrentSection()
+  hideCurrentSection();
 }
