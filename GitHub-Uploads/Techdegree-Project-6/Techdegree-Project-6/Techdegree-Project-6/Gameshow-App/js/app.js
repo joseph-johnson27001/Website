@@ -18,6 +18,9 @@ const phrases = [
   "I Dont Like Sand",
   "Use The Force Luke",
   "Obi Wan Kenobi",
+  "Princess Leia",
+  "Chewbacca",
+  "Tattooine",
 ];
 
 //--------------------------------------------------------------------------
