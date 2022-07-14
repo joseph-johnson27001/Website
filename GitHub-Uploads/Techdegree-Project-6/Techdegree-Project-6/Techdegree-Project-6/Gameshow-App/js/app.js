@@ -21,6 +21,8 @@ const phrases = [
   "Princess Leia",
   "Chewbacca",
   "Tattooine",
+  "Lightsaber",
+  "Short For A Stormtrooper",
 ];
 
 //--------------------------------------------------------------------------
