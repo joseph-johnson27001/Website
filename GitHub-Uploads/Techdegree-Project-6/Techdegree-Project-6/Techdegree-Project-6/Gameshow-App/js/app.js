@@ -23,6 +23,7 @@ const phrases = [
   "Tattooine",
   "Lightsaber",
   "Short For A Stormtrooper",
+  "Jabba The Hut",
 ];
 
 //--------------------------------------------------------------------------
