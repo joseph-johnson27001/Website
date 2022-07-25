@@ -123,6 +123,10 @@ BOTTOM NAVIGATION
   padding: 0px 0px 0px 12px !important;
 }
 
+#github-icon {
+  padding-left: 8px !important;
+}
+
 .footer-icon:hover {
   color: skyblue;
 }
