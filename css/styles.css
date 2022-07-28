@@ -68,6 +68,10 @@ h3 {
   animation-delay: 1.5s;
 }
 
+.intro-heading {
+  margin-bottom: 8px;
+}
+
 #intro_button {
   color: white;
   border-radius: 12px;
