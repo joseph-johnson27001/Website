@@ -59,7 +59,7 @@ NAVIGATION
 }
 
 .navbar-toggler-icon {
-  margin: .2rem 0;
+  margin: .3em 0;
 }
 
 .nav-item {
@@ -69,6 +69,7 @@ NAVIGATION
 
 .nav-item:hover  {
   background-color: #FF6600;
+  color: white !important;
 }
 
 .active {
